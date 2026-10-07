@@ -1,3 +1,19 @@
-# Kai Game Design
+# Kai Game Design — Chain Shot V0.1
 
-轻量小游戏设计与打磨仓库。主分支仅保存稳定设计基线；每个游戏使用独立设计分支持续迭代。
+本分支用于验证 Chain Shot 的核心 Pleasure Loop，不代表完整立项。
+
+## Files
+
+- `CHAIN_SHOT_DESIGN_V0.1.md` — 规则、范围、Playtest Gate、Kill Conditions
+- `CODEX_TASK_V0.1.md` — 可直接交给 Codex 的实现任务
+- `prototype/chain-shot-v0.1.html` — 单文件 Canvas 交互原型
+
+## Current Decision
+
+- Active Prototype: **Chain Shot**
+- Backup: **Bounce Merge**
+- Backup: **Breath Block**
+
+当前只验证：**一次点击能否触发清晰、可预测、值得观看的分叉连锁，并促使玩家主动换 Seed 重试。**
+
+不要在 V0.1 增加敌人、技能、数值成长、障碍物、Roguelike、Meta 或程序化关卡系统。
