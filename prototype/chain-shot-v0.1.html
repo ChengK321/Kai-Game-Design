@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no" />
+  <title>Chain Shot V0.1</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    html,body { margin:0;width:100%;height:100%;overflow:hidden;background:#070912; }
+    body { display:grid;place-items:center; }
+    #app { position:relative;width:min(100vw,520px);height:100dvh;min-height:560px;overflow:hidden;background:radial-gradient(circle at 50% 20%,rgba(74,115,255,.14),transparent 34%),radial-gradient(circle at 50% 86%,rgba(163,82,255,.10),transparent 32%),#090b14;box-shadow:0 0 60px rgba(0,0,0,.42);user-select:none;-webkit-user-select:none;touch-action:none; }
+    canvas { position:absolute;inset:0;width:100%;height:100%;touch-action:none; }
+    .topbar { position:absolute;z-index:4;top:max(16px,env(safe-area-inset-top));left:18px;right:18px;display:flex;align-items:flex-start;justify-content:space-between;pointer-events:none; }
+    .brand { letter-spacing:.15em;font-weight:800;font-size:13px;color:rgba(255,255,255,.94); }
+    .sub { margin-top:5px;font-size:12px;color:rgba(255,255,255,.48); }
+    .stat{text-align:right}.stat strong{display:block;font-size:22px;line-height:1;font-variant-numeric:tabular-nums}.stat span{display:block;margin-top:5px;font-size:11px;color:rgba(255,255,255,.44);letter-spacing:.08em;text-transform:uppercase}
+    .message { position:absolute;z-index:4;left:24px;right:24px;bottom:calc(98px + env(safe-area-inset-bottom));text-align:center;font-size:13px;color:rgba(255,255,255,.66);pointer-events:none;min-height:20px; }
+    .controls { position:absolute;z-index:5;left:16px;right:16px;bottom:max(16px,env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px; }
+    button { appearance:none;border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:13px 10px;color:rgba(255,255,255,.88);background:rgba(255,255,255,.07);backdrop-filter:blur(12px);font:inherit;font-size:13px;font-weight:700;cursor:pointer;-webkit-tap-highlight-color:transparent; }
+    button:active{transform:translateY(1px) scale(.99)}button.primary{background:rgba(105,118,255,.22);border-color:rgba(137,151,255,.34)}button:disabled{opacity:.28;cursor:default}
+  </style>
+</head>
+<body>
+<div id="app">
+  <canvas id="game"></canvas>
+  <div class="topbar">
+    <div><div class="brand">CHAIN SHOT</div><div class="sub" id="levelText">LEVEL 1 / 5</div></div>
+    <div class="stat"><strong id="counter">0 / 0</strong><span>activated</span></div>
+  </div>
+  <div class="message" id="message">点一个箭头，启动连锁</div>
+  <div class="controls"><button id="restartBtn">重来</button><button id="demoBtn" class="primary">演示连锁</button><button id="nextBtn" disabled>下一关</button></div>
+</div>
+<script>
+(() => {
+"use strict";
+const canvas=document.getElementById("game"),ctx=canvas.getContext("2d"),app=document.getElementById("app");
+const levelText=document.getElementById("levelText"),counter=document.getElementById("counter"),message=document.getElementById("message"),restartBtn=document.getElementById("restartBtn"),demoBtn=document.getElementById("demoBtn"),nextBtn=document.getElementById("nextBtn");
+const COLS=7,ROWS=9,STEP_MS=88;
+const DIRS={U:{dx:0,dy:-1,glyph:"↑"},D:{dx:0,dy:1,glyph:"↓"},L:{dx:-1,dy:0,glyph:"←"},R:{dx:1,dy:0,glyph:"→"},UL:{dx:-1,dy:-1,glyph:"↖"},UR:{dx:1,dy:-1,glyph:"↗"},DL:{dx:-1,dy:1,glyph:"↙"},DR:{dx:1,dy:1,glyph:"↘"}};
+const LEVELS=[
+{solution:2,nodes:[{x:4,y:2,dir:"DL"},{x:4,y:6,dir:"U"},{x:5,y:6,dir:"L"},{x:4,y:3,dir:"R"},{x:2,y:6,dir:"DR"}]},
+{solution:0,nodes:[{x:5,y:3,dir:"D"},{x:5,y:4,dir:"UL"},{x:6,y:6,dir:"U"},{x:6,y:5,dir:"L"},{x:5,y:6,dir:"R"},{x:6,y:0,dir:"DL"},{x:4,y:5,dir:"DL"}]},
+{solution:7,nodes:[{x:1,y:1,dir:"R"},{x:2,y:1,dir:"DR"},{x:6,y:0,dir:"L"},{x:0,y:0,dir:"U"},{x:3,y:0,dir:"U"},{x:1,y:8,dir:"UL"},{x:3,y:1,dir:"DR"},{x:3,y:3,dir:"UR"},{x:1,y:0,dir:"D"}]},
+{solution:4,nodes:[{x:3,y:6,dir:"U"},{x:0,y:4,dir:"UR"},{x:6,y:8,dir:"UL"},{x:2,y:2,dir:"DR"},{x:5,y:4,dir:"UR"},{x:3,y:1,dir:"DL"},{x:3,y:5,dir:"DR"},{x:3,y:3,dir:"D"},{x:4,y:5,dir:"U"},{x:3,y:7,dir:"D"},{x:6,y:3,dir:"DL"}]},
+{solution:1,nodes:[{x:6,y:1,dir:"DL"},{x:0,y:0,dir:"D"},{x:0,y:6,dir:"D"},{x:0,y:7,dir:"R"},{x:5,y:5,dir:"UR"},{x:0,y:4,dir:"UR"},{x:0,y:5,dir:"R"},{x:6,y:7,dir:"U"},{x:0,y:1,dir:"DL"},{x:1,y:7,dir:"DL"},{x:5,y:7,dir:"D"},{x:2,y:5,dir:"UL"},{x:6,y:4,dir:"UR"}]}
+];
+let cssW=0,cssH=0,dpr=1,currentLevel=0,nodes=[],pulses=[],rings=[],particles=[],running=false,result=null,activatedCount=0,combo=0,accumulator=0,lastTime=performance.now(),resultAt=0,shake=0,demoTimer=0,audioCtx=null;
+const cloneLevelNodes=()=>LEVELS[currentLevel].nodes.map((n,index)=>({...n,index,active:false,activatedAt:0}));
+function resize(){const rect=app.getBoundingClientRect();cssW=Math.max(1,rect.width);cssH=Math.max(1,rect.height);dpr=Math.min(window.devicePixelRatio||1,2);canvas.width=Math.round(cssW*dpr);canvas.height=Math.round(cssH*dpr);canvas.style.width=cssW+"px";canvas.style.height=cssH+"px";ctx.setTransform(dpr,0,0,dpr,0,0)}
+function boardMetrics(){const side=Math.max(28,Math.min(46,cssW*.09)),top=106,bottom=156,availableW=Math.max(120,cssW-side*2),availableH=Math.max(180,cssH-top-bottom),cell=Math.min(availableW/(COLS-1),availableH/(ROWS-1)),boardW=cell*(COLS-1),boardH=cell*(ROWS-1);return{cell,x0:(cssW-boardW)/2,y0:top+Math.max(0,(availableH-boardH)*.42),nodeR:Math.max(18,Math.min(24,cell*.31))}}
+function gridToScreen(x,y){const b=boardMetrics();return{x:b.x0+x*b.cell,y:b.y0+y*b.cell}}
+function resetLevel(){clearTimeout(demoTimer);nodes=cloneLevelNodes();pulses=[];rings=[];particles=[];running=false;result=null;activatedCount=0;combo=0;accumulator=0;shake=0;resultAt=0;updateUI()}
+function updateUI(){levelText.textContent=`LEVEL ${currentLevel+1} / ${LEVELS.length}`;counter.textContent=`${activatedCount} / ${nodes.length}`;nextBtn.disabled=result!=="success";if(running)message.textContent="连锁展开中…";else if(result==="success")message.textContent="全场点亮。这个 Seed 成立。";else if(result==="fail")message.textContent=`还差 ${nodes.length-activatedCount} 个。换一个起点试试。`;else message.textContent="点一个箭头，启动连锁"}
+function ensureAudio(){if(!audioCtx){const AudioContext=window.AudioContext||window.webkitAudioContext;if(AudioContext)audioCtx=new AudioContext()}if(audioCtx&&audioCtx.state==="suspended")audioCtx.resume()}
+function playTone(depth,success=false){if(!audioCtx)return;const now=audioCtx.currentTime,osc=audioCtx.createOscillator(),gain=audioCtx.createGain(),base=success?560:220+Math.min(depth,18)*24;osc.type=success?"triangle":"sine";osc.frequency.setValueAtTime(base,now);if(success)osc.frequency.exponentialRampToValueAtTime(920,now+.12);gain.gain.setValueAtTime(.0001,now);gain.gain.exponentialRampToValueAtTime(success?.12:.055,now+.008);gain.gain.exponentialRampToValueAtTime(.0001,now+(success?.2:.09));osc.connect(gain);gain.connect(audioCtx.destination);osc.start(now);osc.stop(now+(success?.22:.11))}
+function addActivationFx(node){rings.push({x:node.x,y:node.y,life:1});for(let i=0;i<8;i++){const angle=Math.PI*2*i/8+Math.random()*.2,speed=.55+Math.random()*.9;particles.push({x:node.x,y:node.y,vx:Math.cos(angle)*speed,vy:Math.sin(angle)*speed,life:1})}}
+function spawnPulse(node){const d=DIRS[node.dir];pulses.push({x:node.x,y:node.y,dx:d.dx,dy:d.dy})}
+function activateNode(index){const node=nodes[index];if(!node||node.active)return;node.active=true;node.activatedAt=performance.now();activatedCount++;combo++;addActivationFx(node);spawnPulse(node);playTone(combo);shake=Math.min(4.2,shake+.55);if(navigator.vibrate&&combo%4===0)navigator.vibrate(8);updateUI()}
+function startAttempt(index){if(running||result)return;ensureAudio();running=true;combo=0;activateNode(index);updateUI()}
+function triggerCell(x,y){for(let i=0;i<nodes.length;i++){const n=nodes[i];if(!n.active&&n.x===x&&n.y===y)activateNode(i)}}
+function finishRound(){if(!running)return;running=false;resultAt=performance.now();if(activatedCount===nodes.length){result="success";playTone(combo+4,true);shake=7;if(navigator.vibrate)navigator.vibrate([16,28,24])}else result="fail";updateUI()}
+function stepSimulation(){if(!running)return;const moving=pulses.slice();pulses=[];for(const p of moving){p.x+=p.dx;p.y+=p.dy;const inside=p.x>=0&&p.x<COLS&&p.y>=0&&p.y<ROWS;if(!inside)continue;triggerCell(p.x,p.y);pulses.push(p)}if(pulses.length===0)finishRound()}
+function roundedRect(x,y,w,h,r){const rr=Math.min(r,w/2,h/2);ctx.beginPath();ctx.moveTo(x+rr,y);ctx.arcTo(x+w,y,x+w,y+h,rr);ctx.arcTo(x+w,y+h,x,y+h,rr);ctx.arcTo(x,y+h,x,y,rr);ctx.arcTo(x,y,x+w,y,rr);ctx.closePath()}
+function drawGrid(){const b=boardMetrics();ctx.save();const pad=b.nodeR+14,x=b.x0-pad,y=b.y0-pad,w=b.cell*(COLS-1)+pad*2,h=b.cell*(ROWS-1)+pad*2;roundedRect(x,y,w,h,28);ctx.fillStyle="rgba(255,255,255,.025)";ctx.fill();ctx.strokeStyle="rgba(255,255,255,.055)";ctx.lineWidth=1;ctx.stroke();for(let gy=0;gy<ROWS;gy++)for(let gx=0;gx<COLS;gx++){const p=gridToScreen(gx,gy);ctx.beginPath();ctx.arc(p.x,p.y,1.4,0,Math.PI*2);ctx.fillStyle="rgba(255,255,255,.09)";ctx.fill()}ctx.restore()}
+function drawPulses(phase){const b=boardMetrics();ctx.save();ctx.lineCap="round";for(const pulse of pulses){const endGX=pulse.x+pulse.dx*phase,endGY=pulse.y+pulse.dy*phase,tailPhase=Math.max(0,phase-.58),startGX=pulse.x+pulse.dx*tailPhase,startGY=pulse.y+pulse.dy*tailPhase,a=gridToScreen(startGX,startGY),z=gridToScreen(endGX,endGY),grad=ctx.createLinearGradient(a.x,a.y,z.x,z.y);grad.addColorStop(0,"rgba(107,123,255,0)");grad.addColorStop(1,"rgba(174,241,255,.96)");ctx.strokeStyle=grad;ctx.lineWidth=Math.max(4,b.cell*.075);ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(z.x,z.y);ctx.stroke();ctx.shadowColor="rgba(165,235,255,.95)";ctx.shadowBlur=18;ctx.fillStyle="rgba(222,251,255,.98)";ctx.beginPath();ctx.arc(z.x,z.y,Math.max(3.5,b.cell*.055),0,Math.PI*2);ctx.fill();ctx.shadowBlur=0}ctx.restore()}
+function drawFx(dt){const b=boardMetrics();for(const ring of rings){ring.life-=dt/520;if(ring.life<=0)continue;const p=gridToScreen(ring.x,ring.y),t=1-ring.life;ctx.beginPath();ctx.arc(p.x,p.y,b.nodeR+t*34,0,Math.PI*2);ctx.strokeStyle=`rgba(144,231,255,${ring.life*.48})`;ctx.lineWidth=2;ctx.stroke()}rings=rings.filter(r=>r.life>0);for(const part of particles){part.life-=dt/620;part.x+=part.vx*dt/1000;part.y+=part.vy*dt/1000;if(part.life<=0)continue;const p=gridToScreen(part.x,part.y);ctx.fillStyle=`rgba(190,240,255,${Math.max(0,part.life)*.7})`;ctx.beginPath();ctx.arc(p.x,p.y,2.1+part.life*1.5,0,Math.PI*2);ctx.fill()}particles=particles.filter(p=>p.life>0)}
+function drawNodes(now){const b=boardMetrics();for(const node of nodes){const p=gridToScreen(node.x,node.y),age=node.active?now-node.activatedAt:Infinity,pop=age<240?1+Math.sin(age/240*Math.PI)*.18:1,r=b.nodeR*pop;ctx.save();if(node.active){ctx.shadowColor="rgba(108,220,255,.75)";ctx.shadowBlur=20;const grad=ctx.createRadialGradient(p.x-r*.3,p.y-r*.35,2,p.x,p.y,r*1.25);grad.addColorStop(0,"rgba(236,255,255,.98)");grad.addColorStop(.38,"rgba(113,220,255,.95)");grad.addColorStop(1,"rgba(112,92,255,.88)");ctx.fillStyle=grad;ctx.strokeStyle="rgba(232,251,255,.95)"}else{ctx.shadowColor="rgba(0,0,0,.35)";ctx.shadowBlur=10;ctx.fillStyle="rgba(19,24,42,.96)";ctx.strokeStyle="rgba(158,170,213,.36)"}ctx.lineWidth=node.active?2.2:1.4;ctx.beginPath();ctx.arc(p.x,p.y,r,0,Math.PI*2);ctx.fill();ctx.stroke();ctx.shadowBlur=0;ctx.fillStyle=node.active?"#08111e":"rgba(232,238,255,.9)";ctx.font=`800 ${Math.max(22,b.nodeR*1.36)}px ui-sans-serif,system-ui,sans-serif`;ctx.textAlign="center";ctx.textBaseline="middle";ctx.fillText(DIRS[node.dir].glyph,p.x,p.y+.5);ctx.restore()}}
+function drawResult(now){if(!result)return;const t=Math.min(1,(now-resultAt)/280),b=boardMetrics(),y=Math.min(cssH-124,b.y0+b.cell*(ROWS-1)+62);ctx.save();ctx.globalAlpha=t;ctx.textAlign="center";ctx.textBaseline="middle";if(result==="success"){ctx.fillStyle="rgba(218,252,255,.96)";ctx.font="800 24px ui-sans-serif,system-ui,sans-serif";ctx.fillText("CHAIN COMPLETE",cssW/2,y)}else{ctx.fillStyle="rgba(255,255,255,.78)";ctx.font="750 18px ui-sans-serif,system-ui,sans-serif";ctx.fillText(`${activatedCount} / ${nodes.length}`,cssW/2,y)}ctx.restore()}
+function draw(dt,phase,now){ctx.clearRect(0,0,cssW,cssH);const shakeNow=Math.max(0,shake);if(shake>0)shake=Math.max(0,shake-dt*.018);ctx.save();if(shakeNow>.05)ctx.translate((Math.random()-.5)*shakeNow,(Math.random()-.5)*shakeNow);drawGrid();drawPulses(phase);drawFx(dt);drawNodes(now);drawResult(now);ctx.restore();if(result==="success"){const age=now-resultAt;if(age<300){ctx.fillStyle=`rgba(197,244,255,${(1-age/300)*.11})`;ctx.fillRect(0,0,cssW,cssH)}}}
+function frame(now){let dt=now-lastTime;lastTime=now;dt=Math.min(dt,50);if(running){accumulator+=dt;while(accumulator>=STEP_MS){stepSimulation();accumulator-=STEP_MS}}else accumulator=0;draw(dt,running?accumulator/STEP_MS:0,now);requestAnimationFrame(frame)}
+function pointerPosition(ev){const rect=canvas.getBoundingClientRect();return{x:ev.clientX-rect.left,y:ev.clientY-rect.top}}
+function findNodeAt(px,py){const b=boardMetrics();let best=-1,bestDist=Infinity;for(let i=0;i<nodes.length;i++){const p=gridToScreen(nodes[i].x,nodes[i].y),d=Math.hypot(px-p.x,py-p.y);if(d<Math.max(30,b.nodeR*1.35)&&d<bestDist){bestDist=d;best=i}}return best}
+canvas.addEventListener("pointerdown",ev=>{if(running||result)return;const p=pointerPosition(ev),index=findNodeAt(p.x,p.y);if(index>=0)startAttempt(index)});
+restartBtn.addEventListener("click",()=>{ensureAudio();resetLevel()});
+demoBtn.addEventListener("click",()=>{ensureAudio();resetLevel();message.textContent="自动演示正确 Seed…";demoTimer=setTimeout(()=>startAttempt(LEVELS[currentLevel].solution),420)});
+nextBtn.addEventListener("click",()=>{if(result!=="success")return;currentLevel=(currentLevel+1)%LEVELS.length;resetLevel()});
+window.addEventListener("resize",resize);
+resize();resetLevel();requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
