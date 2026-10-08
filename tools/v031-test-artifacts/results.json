@@ -1,0 +1,401 @@
+{
+  "seedComparisons": 1100,
+  "layouts": [
+    [
+      1000,
+      900,
+      1
+    ],
+    [
+      390,
+      844,
+      3
+    ],
+    [
+      320,
+      568,
+      2
+    ]
+  ],
+  "l6Pop": [
+    {
+      "time": 1.6106666666666667,
+      "count": 1,
+      "indices": [
+        6
+      ],
+      "rate": 1,
+      "attempt": 2226
+    },
+    {
+      "time": 1.6906666666666668,
+      "count": 1,
+      "indices": [
+        7
+      ],
+      "rate": 0.9900000095367432,
+      "attempt": 2226
+    },
+    {
+      "time": 1.7706666666666666,
+      "count": 1,
+      "indices": [
+        0
+      ],
+      "rate": 1.0149999856948853,
+      "attempt": 2226
+    },
+    {
+      "time": 1.96,
+      "count": 1,
+      "indices": [
+        1
+      ],
+      "rate": 0.9850000143051147,
+      "attempt": 2226
+    },
+    {
+      "time": 2.04,
+      "count": 1,
+      "indices": [
+        2
+      ],
+      "rate": 1,
+      "attempt": 2226
+    },
+    {
+      "time": 2.2213333333333334,
+      "count": 1,
+      "indices": [
+        5
+      ],
+      "rate": 0.9900000095367432,
+      "attempt": 2226
+    },
+    {
+      "time": 2.392,
+      "count": 1,
+      "indices": [
+        4
+      ],
+      "rate": 1.0149999856948853,
+      "attempt": 2226
+    },
+    {
+      "time": 2.490666666666667,
+      "count": 1,
+      "indices": [
+        8
+      ],
+      "rate": 0.9850000143051147,
+      "attempt": 2226
+    },
+    {
+      "time": 2.570666666666667,
+      "count": 1,
+      "indices": [
+        9
+      ],
+      "rate": 1,
+      "attempt": 2226
+    },
+    {
+      "time": 2.7413333333333334,
+      "count": 1,
+      "indices": [
+        10
+      ],
+      "rate": 0.9900000095367432,
+      "attempt": 2226
+    },
+    {
+      "time": 2.84,
+      "count": 1,
+      "indices": [
+        11
+      ],
+      "rate": 1.0149999856948853,
+      "attempt": 2226
+    },
+    {
+      "time": 3.010666666666667,
+      "count": 1,
+      "indices": [
+        3
+      ],
+      "rate": 0.9850000143051147,
+      "attempt": 2226
+    }
+  ],
+  "l6NearSeed": 0,
+  "l10Pop": [
+    {
+      "time": 15.221333333333334,
+      "count": 1,
+      "indices": [
+        9
+      ],
+      "rate": 1,
+      "attempt": 2237
+    },
+    {
+      "time": 15.312,
+      "count": 1,
+      "indices": [
+        8
+      ],
+      "rate": 0.9900000095367432,
+      "attempt": 2237
+    },
+    {
+      "time": 15.392,
+      "count": 1,
+      "indices": [
+        7
+      ],
+      "rate": 1.0149999856948853,
+      "attempt": 2237
+    },
+    {
+      "time": 15.490666666666666,
+      "count": 1,
+      "indices": [
+        6
+      ],
+      "rate": 0.9850000143051147,
+      "attempt": 2237
+    },
+    {
+      "time": 15.570666666666666,
+      "count": 2,
+      "indices": [
+        13,
+        5
+      ],
+      "rate": 1,
+      "attempt": 2237
+    },
+    {
+      "time": 15.661333333333333,
+      "count": 1,
+      "indices": [
+        4
+      ],
+      "rate": 0.9900000095367432,
+      "attempt": 2237
+    },
+    {
+      "time": 15.741333333333333,
+      "count": 2,
+      "indices": [
+        17,
+        11
+      ],
+      "rate": 1.0149999856948853,
+      "attempt": 2237
+    },
+    {
+      "time": 15.92,
+      "count": 1,
+      "indices": [
+        15
+      ],
+      "rate": 0.9850000143051147,
+      "attempt": 2237
+    },
+    {
+      "time": 16.112,
+      "count": 1,
+      "indices": [
+        10
+      ],
+      "rate": 1,
+      "attempt": 2237
+    },
+    {
+      "time": 16.36,
+      "count": 1,
+      "indices": [
+        3
+      ],
+      "rate": 0.9900000095367432,
+      "attempt": 2237
+    },
+    {
+      "time": 16.541333333333334,
+      "count": 2,
+      "indices": [
+        2,
+        1
+      ],
+      "rate": 1.0149999856948853,
+      "attempt": 2237
+    },
+    {
+      "time": 16.72,
+      "count": 1,
+      "indices": [
+        0
+      ],
+      "rate": 0.9850000143051147,
+      "attempt": 2237
+    },
+    {
+      "time": 16.970666666666666,
+      "count": 1,
+      "indices": [
+        12
+      ],
+      "rate": 1,
+      "attempt": 2237
+    },
+    {
+      "time": 17.152,
+      "count": 1,
+      "indices": [
+        16
+      ],
+      "rate": 0.9900000095367432,
+      "attempt": 2237
+    },
+    {
+      "time": 17.421333333333333,
+      "count": 1,
+      "indices": [
+        14
+      ],
+      "rate": 1.0149999856948853,
+      "attempt": 2237
+    }
+  ],
+  "l10Hits": [
+    {
+      "index": 9,
+      "depth": 0,
+      "time": 15.221333333333334,
+      "attempt": 2237
+    },
+    {
+      "index": 8,
+      "depth": 1,
+      "time": 15.312,
+      "attempt": 2237
+    },
+    {
+      "index": 7,
+      "depth": 1,
+      "time": 15.392,
+      "attempt": 2237
+    },
+    {
+      "index": 6,
+      "depth": 1,
+      "time": 15.490666666666666,
+      "attempt": 2237
+    },
+    {
+      "index": 13,
+      "depth": 2,
+      "time": 15.570666666666666,
+      "attempt": 2237
+    },
+    {
+      "index": 5,
+      "depth": 1,
+      "time": 15.570666666666666,
+      "attempt": 2237
+    },
+    {
+      "index": 4,
+      "depth": 2,
+      "time": 15.661333333333333,
+      "attempt": 2237
+    },
+    {
+      "index": 17,
+      "depth": 2,
+      "time": 15.741333333333333,
+      "attempt": 2237
+    },
+    {
+      "index": 11,
+      "depth": 2,
+      "time": 15.741333333333333,
+      "attempt": 2237
+    },
+    {
+      "index": 15,
+      "depth": 2,
+      "time": 15.92,
+      "attempt": 2237
+    },
+    {
+      "index": 10,
+      "depth": 3,
+      "time": 16.112,
+      "attempt": 2237
+    },
+    {
+      "index": 3,
+      "depth": 3,
+      "time": 16.36,
+      "attempt": 2237
+    },
+    {
+      "index": 2,
+      "depth": 4,
+      "time": 16.541333333333334,
+      "attempt": 2237
+    },
+    {
+      "index": 1,
+      "depth": 3,
+      "time": 16.541333333333334,
+      "attempt": 2237
+    },
+    {
+      "index": 0,
+      "depth": 4,
+      "time": 16.72,
+      "attempt": 2237
+    },
+    {
+      "index": 12,
+      "depth": 5,
+      "time": 16.970666666666666,
+      "attempt": 2237
+    },
+    {
+      "index": 16,
+      "depth": 5,
+      "time": 17.152,
+      "attempt": 2237
+    },
+    {
+      "index": 14,
+      "depth": 6,
+      "time": 17.421333333333333,
+      "attempt": 2237
+    }
+  ],
+  "offlineAudio": [
+    {
+      "id": "balloon2",
+      "peak": 0.06087241694331169
+    },
+    {
+      "id": "balloon",
+      "peak": 0.02713942527770996
+    },
+    {
+      "id": "impact",
+      "peak": 0.0913131833076477
+    },
+    {
+      "id": "pluck",
+      "peak": 0.10654440522193909
+    }
+  ],
+  "consoleErrors": [],
+  "externalRequests": 0
+}
