@@ -1,0 +1,49 @@
+{
+  "audioStress": {
+    "peak": 0.025161869823932648,
+    "maxVoices": 9
+  },
+  "seedComparisons": 660,
+  "layouts": [
+    {
+      "width": 1000,
+      "height": 900,
+      "dpr": 1,
+      "scrollWidth": 1000,
+      "appHeight": 900,
+      "controlsTop": 840,
+      "canvasWidth": 520
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "dpr": 3,
+      "scrollWidth": 390,
+      "appHeight": 844,
+      "controlsTop": 784,
+      "canvasWidth": 780
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "dpr": 2,
+      "scrollWidth": 320,
+      "appHeight": 720,
+      "controlsTop": 660,
+      "canvasWidth": 640
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "dpr": 2,
+      "scrollWidth": 768,
+      "appHeight": 1024,
+      "controlsTop": 964,
+      "canvasWidth": 1040
+    }
+  ],
+  "touchDemo": "PASS",
+  "mute": "PASS",
+  "consoleErrors": [],
+  "externalRequests": 0
+}

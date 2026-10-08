@@ -1,0 +1,2572 @@
+[
+  {
+    "name": "第一推动",
+    "solutionCount": 1,
+    "solutionSeeds": [
+      2
+    ],
+    "nearMissCount": 1,
+    "seeds": [
+      {
+        "seed": 0,
+        "reachableCount": 1,
+        "reachRatio": 0.2,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "0": 0
+        },
+        "activated": [
+          0
+        ]
+      },
+      {
+        "seed": 1,
+        "reachableCount": 3,
+        "reachRatio": 0.6,
+        "cascadeDepth": 1,
+        "branchEvents": 1,
+        "generations": {
+          "1": 0,
+          "3": 1,
+          "0": 1
+        },
+        "activated": [
+          0,
+          1,
+          3
+        ]
+      },
+      {
+        "seed": 2,
+        "reachableCount": 5,
+        "reachRatio": 1.0,
+        "cascadeDepth": 2,
+        "branchEvents": 2,
+        "generations": {
+          "2": 0,
+          "1": 1,
+          "4": 1,
+          "3": 2,
+          "0": 2
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "seed": 3,
+        "reachableCount": 1,
+        "reachRatio": 0.2,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "3": 0
+        },
+        "activated": [
+          3
+        ]
+      },
+      {
+        "seed": 4,
+        "reachableCount": 1,
+        "reachRatio": 0.2,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "4": 0
+        },
+        "activated": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "name": "一线分叉",
+    "solutionCount": 1,
+    "solutionSeeds": [
+      0
+    ],
+    "nearMissCount": 1,
+    "seeds": [
+      {
+        "seed": 0,
+        "reachableCount": 7,
+        "reachRatio": 1.0,
+        "cascadeDepth": 4,
+        "branchEvents": 2,
+        "generations": {
+          "0": 0,
+          "1": 1,
+          "4": 1,
+          "2": 2,
+          "3": 3,
+          "5": 3,
+          "6": 4
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "seed": 1,
+        "reachableCount": 1,
+        "reachRatio": 0.14285714285714285,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "1": 0
+        },
+        "activated": [
+          1
+        ]
+      },
+      {
+        "seed": 2,
+        "reachableCount": 4,
+        "reachRatio": 0.5714285714285714,
+        "cascadeDepth": 2,
+        "branchEvents": 1,
+        "generations": {
+          "2": 0,
+          "3": 1,
+          "5": 1,
+          "6": 2
+        },
+        "activated": [
+          2,
+          3,
+          5,
+          6
+        ]
+      },
+      {
+        "seed": 3,
+        "reachableCount": 2,
+        "reachRatio": 0.2857142857142857,
+        "cascadeDepth": 1,
+        "branchEvents": 0,
+        "generations": {
+          "3": 0,
+          "6": 1
+        },
+        "activated": [
+          3,
+          6
+        ]
+      },
+      {
+        "seed": 4,
+        "reachableCount": 5,
+        "reachRatio": 0.7142857142857143,
+        "cascadeDepth": 3,
+        "branchEvents": 1,
+        "generations": {
+          "4": 0,
+          "2": 1,
+          "3": 2,
+          "5": 2,
+          "6": 3
+        },
+        "activated": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "seed": 5,
+        "reachableCount": 1,
+        "reachRatio": 0.14285714285714285,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "5": 0
+        },
+        "activated": [
+          5
+        ]
+      },
+      {
+        "seed": 6,
+        "reachableCount": 1,
+        "reachRatio": 0.14285714285714285,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "6": 0
+        },
+        "activated": [
+          6
+        ]
+      }
+    ]
+  },
+  {
+    "name": "折返",
+    "solutionCount": 1,
+    "solutionSeeds": [
+      5
+    ],
+    "nearMissCount": 4,
+    "seeds": [
+      {
+        "seed": 0,
+        "reachableCount": 1,
+        "reachRatio": 0.125,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "0": 0
+        },
+        "activated": [
+          0
+        ]
+      },
+      {
+        "seed": 1,
+        "reachableCount": 1,
+        "reachRatio": 0.125,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "1": 0
+        },
+        "activated": [
+          1
+        ]
+      },
+      {
+        "seed": 2,
+        "reachableCount": 5,
+        "reachRatio": 0.625,
+        "cascadeDepth": 3,
+        "branchEvents": 1,
+        "generations": {
+          "2": 0,
+          "4": 1,
+          "3": 2,
+          "1": 3,
+          "0": 3
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "seed": 3,
+        "reachableCount": 5,
+        "reachRatio": 0.625,
+        "cascadeDepth": 2,
+        "branchEvents": 1,
+        "generations": {
+          "3": 0,
+          "2": 1,
+          "1": 1,
+          "0": 1,
+          "4": 2
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "seed": 4,
+        "reachableCount": 5,
+        "reachRatio": 0.625,
+        "cascadeDepth": 2,
+        "branchEvents": 1,
+        "generations": {
+          "4": 0,
+          "3": 1,
+          "2": 2,
+          "1": 2,
+          "0": 2
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "seed": 5,
+        "reachableCount": 8,
+        "reachRatio": 1.0,
+        "cascadeDepth": 5,
+        "branchEvents": 2,
+        "generations": {
+          "5": 0,
+          "6": 1,
+          "7": 1,
+          "2": 2,
+          "4": 3,
+          "3": 4,
+          "1": 5,
+          "0": 5
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "seed": 6,
+        "reachableCount": 1,
+        "reachRatio": 0.125,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "6": 0
+        },
+        "activated": [
+          6
+        ]
+      },
+      {
+        "seed": 7,
+        "reachableCount": 6,
+        "reachRatio": 0.75,
+        "cascadeDepth": 4,
+        "branchEvents": 1,
+        "generations": {
+          "7": 0,
+          "2": 1,
+          "4": 2,
+          "3": 3,
+          "1": 4,
+          "0": 4
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          7
+        ]
+      }
+    ]
+  },
+  {
+    "name": "交汇",
+    "solutionCount": 1,
+    "solutionSeeds": [
+      1
+    ],
+    "nearMissCount": 3,
+    "seeds": [
+      {
+        "seed": 0,
+        "reachableCount": 8,
+        "reachRatio": 0.8888888888888888,
+        "cascadeDepth": 3,
+        "branchEvents": 3,
+        "generations": {
+          "0": 0,
+          "3": 1,
+          "6": 1,
+          "4": 2,
+          "5": 2,
+          "7": 2,
+          "8": 2,
+          "2": 3
+        },
+        "activated": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "seed": 1,
+        "reachableCount": 9,
+        "reachRatio": 1.0,
+        "cascadeDepth": 4,
+        "branchEvents": 3,
+        "generations": {
+          "1": 0,
+          "0": 1,
+          "3": 2,
+          "6": 2,
+          "4": 3,
+          "5": 3,
+          "7": 3,
+          "8": 3,
+          "2": 4
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "seed": 2,
+        "reachableCount": 5,
+        "reachRatio": 0.5555555555555556,
+        "cascadeDepth": 2,
+        "branchEvents": 2,
+        "generations": {
+          "2": 0,
+          "4": 1,
+          "6": 1,
+          "7": 2,
+          "8": 2
+        },
+        "activated": [
+          2,
+          4,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "seed": 3,
+        "reachableCount": 7,
+        "reachRatio": 0.7777777777777778,
+        "cascadeDepth": 3,
+        "branchEvents": 2,
+        "generations": {
+          "3": 0,
+          "4": 1,
+          "5": 1,
+          "6": 2,
+          "2": 2,
+          "7": 3,
+          "8": 3
+        },
+        "activated": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "seed": 4,
+        "reachableCount": 4,
+        "reachRatio": 0.4444444444444444,
+        "cascadeDepth": 2,
+        "branchEvents": 1,
+        "generations": {
+          "4": 0,
+          "6": 1,
+          "7": 2,
+          "8": 2
+        },
+        "activated": [
+          4,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "seed": 5,
+        "reachableCount": 6,
+        "reachRatio": 0.6666666666666666,
+        "cascadeDepth": 3,
+        "branchEvents": 2,
+        "generations": {
+          "5": 0,
+          "2": 1,
+          "4": 2,
+          "6": 2,
+          "7": 3,
+          "8": 3
+        },
+        "activated": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "seed": 6,
+        "reachableCount": 3,
+        "reachRatio": 0.3333333333333333,
+        "cascadeDepth": 1,
+        "branchEvents": 1,
+        "generations": {
+          "6": 0,
+          "7": 1,
+          "8": 1
+        },
+        "activated": [
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "seed": 7,
+        "reachableCount": 1,
+        "reachRatio": 0.1111111111111111,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "7": 0
+        },
+        "activated": [
+          7
+        ]
+      },
+      {
+        "seed": 8,
+        "reachableCount": 1,
+        "reachRatio": 0.1111111111111111,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "8": 0
+        },
+        "activated": [
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "name": "闪电",
+    "solutionCount": 1,
+    "solutionSeeds": [
+      0
+    ],
+    "nearMissCount": 5,
+    "seeds": [
+      {
+        "seed": 0,
+        "reachableCount": 11,
+        "reachRatio": 1.0,
+        "cascadeDepth": 3,
+        "branchEvents": 3,
+        "generations": {
+          "0": 0,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 2,
+          "5": 2,
+          "6": 2,
+          "7": 2,
+          "8": 3,
+          "9": 3,
+          "10": 3
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "seed": 1,
+        "reachableCount": 10,
+        "reachRatio": 0.9090909090909091,
+        "cascadeDepth": 3,
+        "branchEvents": 3,
+        "generations": {
+          "1": 0,
+          "2": 1,
+          "3": 1,
+          "4": 2,
+          "5": 2,
+          "6": 2,
+          "7": 2,
+          "8": 3,
+          "9": 3,
+          "10": 3
+        },
+        "activated": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "seed": 2,
+        "reachableCount": 9,
+        "reachRatio": 0.8181818181818182,
+        "cascadeDepth": 3,
+        "branchEvents": 2,
+        "generations": {
+          "2": 0,
+          "3": 1,
+          "4": 2,
+          "5": 2,
+          "6": 2,
+          "7": 2,
+          "8": 3,
+          "9": 3,
+          "10": 3
+        },
+        "activated": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "seed": 3,
+        "reachableCount": 9,
+        "reachRatio": 0.8181818181818182,
+        "cascadeDepth": 3,
+        "branchEvents": 2,
+        "generations": {
+          "3": 0,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 2,
+          "9": 2,
+          "10": 2,
+          "2": 3
+        },
+        "activated": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "seed": 4,
+        "reachableCount": 1,
+        "reachRatio": 0.09090909090909091,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "4": 0
+        },
+        "activated": [
+          4
+        ]
+      },
+      {
+        "seed": 5,
+        "reachableCount": 2,
+        "reachRatio": 0.18181818181818182,
+        "cascadeDepth": 1,
+        "branchEvents": 0,
+        "generations": {
+          "5": 0,
+          "8": 1
+        },
+        "activated": [
+          5,
+          8
+        ]
+      },
+      {
+        "seed": 6,
+        "reachableCount": 1,
+        "reachRatio": 0.09090909090909091,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "6": 0
+        },
+        "activated": [
+          6
+        ]
+      },
+      {
+        "seed": 7,
+        "reachableCount": 9,
+        "reachRatio": 0.8181818181818182,
+        "cascadeDepth": 4,
+        "branchEvents": 3,
+        "generations": {
+          "7": 0,
+          "8": 1,
+          "9": 1,
+          "10": 1,
+          "4": 2,
+          "2": 2,
+          "3": 3,
+          "5": 4,
+          "6": 4
+        },
+        "activated": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "seed": 8,
+        "reachableCount": 1,
+        "reachRatio": 0.09090909090909091,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "8": 0
+        },
+        "activated": [
+          8
+        ]
+      },
+      {
+        "seed": 9,
+        "reachableCount": 9,
+        "reachRatio": 0.8181818181818182,
+        "cascadeDepth": 5,
+        "branchEvents": 2,
+        "generations": {
+          "9": 0,
+          "10": 1,
+          "4": 2,
+          "2": 2,
+          "3": 3,
+          "5": 4,
+          "6": 4,
+          "7": 4,
+          "8": 5
+        },
+        "activated": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "seed": 10,
+        "reachableCount": 9,
+        "reachRatio": 0.8181818181818182,
+        "cascadeDepth": 4,
+        "branchEvents": 2,
+        "generations": {
+          "10": 0,
+          "4": 1,
+          "2": 1,
+          "3": 2,
+          "5": 3,
+          "6": 3,
+          "7": 3,
+          "8": 4,
+          "9": 4
+        },
+        "activated": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ]
+  },
+  {
+    "name": "双环",
+    "solutionCount": 1,
+    "solutionSeeds": [
+      6
+    ],
+    "nearMissCount": 6,
+    "seeds": [
+      {
+        "seed": 0,
+        "reachableCount": 10,
+        "reachRatio": 0.8333333333333334,
+        "cascadeDepth": 5,
+        "branchEvents": 3,
+        "generations": {
+          "0": 0,
+          "1": 1,
+          "2": 1,
+          "5": 2,
+          "4": 3,
+          "8": 3,
+          "9": 3,
+          "10": 4,
+          "11": 4,
+          "3": 5
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "seed": 1,
+        "reachableCount": 8,
+        "reachRatio": 0.6666666666666666,
+        "cascadeDepth": 4,
+        "branchEvents": 2,
+        "generations": {
+          "1": 0,
+          "5": 1,
+          "4": 2,
+          "8": 2,
+          "9": 2,
+          "10": 3,
+          "11": 3,
+          "3": 4
+        },
+        "activated": [
+          1,
+          3,
+          4,
+          5,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "seed": 2,
+        "reachableCount": 1,
+        "reachRatio": 0.08333333333333333,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "2": 0
+        },
+        "activated": [
+          2
+        ]
+      },
+      {
+        "seed": 3,
+        "reachableCount": 8,
+        "reachRatio": 0.6666666666666666,
+        "cascadeDepth": 4,
+        "branchEvents": 2,
+        "generations": {
+          "3": 0,
+          "1": 1,
+          "5": 2,
+          "4": 3,
+          "8": 3,
+          "9": 3,
+          "10": 4,
+          "11": 4
+        },
+        "activated": [
+          1,
+          3,
+          4,
+          5,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "seed": 4,
+        "reachableCount": 1,
+        "reachRatio": 0.08333333333333333,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "4": 0
+        },
+        "activated": [
+          4
+        ]
+      },
+      {
+        "seed": 5,
+        "reachableCount": 8,
+        "reachRatio": 0.6666666666666666,
+        "cascadeDepth": 3,
+        "branchEvents": 3,
+        "generations": {
+          "5": 0,
+          "4": 1,
+          "8": 1,
+          "9": 1,
+          "10": 2,
+          "11": 2,
+          "3": 3,
+          "1": 3
+        },
+        "activated": [
+          1,
+          3,
+          4,
+          5,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "seed": 6,
+        "reachableCount": 12,
+        "reachRatio": 1.0,
+        "cascadeDepth": 6,
+        "branchEvents": 4,
+        "generations": {
+          "6": 0,
+          "7": 1,
+          "0": 1,
+          "1": 2,
+          "2": 2,
+          "5": 3,
+          "4": 4,
+          "8": 4,
+          "9": 4,
+          "10": 5,
+          "11": 5,
+          "3": 6
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "seed": 7,
+        "reachableCount": 11,
+        "reachRatio": 0.9166666666666666,
+        "cascadeDepth": 6,
+        "branchEvents": 3,
+        "generations": {
+          "7": 0,
+          "0": 1,
+          "1": 2,
+          "2": 2,
+          "5": 3,
+          "4": 4,
+          "8": 4,
+          "9": 4,
+          "10": 5,
+          "11": 5,
+          "3": 6
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "seed": 8,
+        "reachableCount": 1,
+        "reachRatio": 0.08333333333333333,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "8": 0
+        },
+        "activated": [
+          8
+        ]
+      },
+      {
+        "seed": 9,
+        "reachableCount": 8,
+        "reachRatio": 0.6666666666666666,
+        "cascadeDepth": 4,
+        "branchEvents": 2,
+        "generations": {
+          "9": 0,
+          "10": 1,
+          "11": 1,
+          "8": 2,
+          "3": 2,
+          "1": 2,
+          "5": 3,
+          "4": 4
+        },
+        "activated": [
+          1,
+          3,
+          4,
+          5,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "seed": 10,
+        "reachableCount": 8,
+        "reachRatio": 0.6666666666666666,
+        "cascadeDepth": 4,
+        "branchEvents": 2,
+        "generations": {
+          "10": 0,
+          "8": 1,
+          "3": 1,
+          "1": 1,
+          "5": 2,
+          "4": 3,
+          "9": 3,
+          "11": 4
+        },
+        "activated": [
+          1,
+          3,
+          4,
+          5,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "seed": 11,
+        "reachableCount": 1,
+        "reachRatio": 0.08333333333333333,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "11": 0
+        },
+        "activated": [
+          11
+        ]
+      }
+    ]
+  },
+  {
+    "name": "爱心",
+    "solutionCount": 1,
+    "solutionSeeds": [
+      3
+    ],
+    "nearMissCount": 7,
+    "seeds": [
+      {
+        "seed": 0,
+        "reachableCount": 9,
+        "reachRatio": 0.8181818181818182,
+        "cascadeDepth": 5,
+        "branchEvents": 1,
+        "generations": {
+          "0": 0,
+          "9": 1,
+          "8": 2,
+          "7": 2,
+          "10": 3,
+          "2": 3,
+          "5": 4,
+          "1": 4,
+          "4": 5
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "seed": 1,
+        "reachableCount": 1,
+        "reachRatio": 0.09090909090909091,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "1": 0
+        },
+        "activated": [
+          1
+        ]
+      },
+      {
+        "seed": 2,
+        "reachableCount": 2,
+        "reachRatio": 0.18181818181818182,
+        "cascadeDepth": 1,
+        "branchEvents": 0,
+        "generations": {
+          "2": 0,
+          "1": 1
+        },
+        "activated": [
+          1,
+          2
+        ]
+      },
+      {
+        "seed": 3,
+        "reachableCount": 11,
+        "reachRatio": 1.0,
+        "cascadeDepth": 7,
+        "branchEvents": 2,
+        "generations": {
+          "3": 0,
+          "6": 1,
+          "5": 2,
+          "4": 3,
+          "2": 4,
+          "0": 4,
+          "1": 5,
+          "9": 5,
+          "8": 6,
+          "7": 6,
+          "10": 7
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "seed": 4,
+        "reachableCount": 9,
+        "reachRatio": 0.8181818181818182,
+        "cascadeDepth": 5,
+        "branchEvents": 2,
+        "generations": {
+          "4": 0,
+          "2": 1,
+          "0": 1,
+          "1": 2,
+          "9": 2,
+          "8": 3,
+          "7": 3,
+          "10": 4,
+          "5": 5
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "seed": 5,
+        "reachableCount": 9,
+        "reachRatio": 0.8181818181818182,
+        "cascadeDepth": 5,
+        "branchEvents": 2,
+        "generations": {
+          "5": 0,
+          "4": 1,
+          "2": 2,
+          "0": 2,
+          "1": 3,
+          "9": 3,
+          "8": 4,
+          "7": 4,
+          "10": 5
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "seed": 6,
+        "reachableCount": 10,
+        "reachRatio": 0.9090909090909091,
+        "cascadeDepth": 6,
+        "branchEvents": 2,
+        "generations": {
+          "6": 0,
+          "5": 1,
+          "4": 2,
+          "2": 3,
+          "0": 3,
+          "1": 4,
+          "9": 4,
+          "8": 5,
+          "7": 5,
+          "10": 6
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "seed": 7,
+        "reachableCount": 9,
+        "reachRatio": 0.8181818181818182,
+        "cascadeDepth": 6,
+        "branchEvents": 1,
+        "generations": {
+          "7": 0,
+          "10": 1,
+          "2": 1,
+          "5": 2,
+          "1": 2,
+          "4": 3,
+          "0": 4,
+          "9": 5,
+          "8": 6
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "seed": 8,
+        "reachableCount": 9,
+        "reachRatio": 0.8181818181818182,
+        "cascadeDepth": 6,
+        "branchEvents": 1,
+        "generations": {
+          "8": 0,
+          "10": 1,
+          "5": 2,
+          "4": 3,
+          "2": 4,
+          "0": 4,
+          "1": 5,
+          "9": 5,
+          "7": 6
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "seed": 9,
+        "reachableCount": 9,
+        "reachRatio": 0.8181818181818182,
+        "cascadeDepth": 5,
+        "branchEvents": 1,
+        "generations": {
+          "9": 0,
+          "8": 1,
+          "7": 1,
+          "10": 2,
+          "2": 2,
+          "5": 3,
+          "1": 3,
+          "4": 4,
+          "0": 5
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "seed": 10,
+        "reachableCount": 9,
+        "reachRatio": 0.8181818181818182,
+        "cascadeDepth": 5,
+        "branchEvents": 2,
+        "generations": {
+          "10": 0,
+          "5": 1,
+          "4": 2,
+          "2": 3,
+          "0": 3,
+          "1": 4,
+          "9": 4,
+          "8": 5,
+          "7": 5
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ]
+  },
+  {
+    "name": "房屋",
+    "solutionCount": 1,
+    "solutionSeeds": [
+      6
+    ],
+    "nearMissCount": 3,
+    "seeds": [
+      {
+        "seed": 0,
+        "reachableCount": 6,
+        "reachRatio": 0.46153846153846156,
+        "cascadeDepth": 3,
+        "branchEvents": 1,
+        "generations": {
+          "0": 0,
+          "4": 1,
+          "3": 1,
+          "1": 2,
+          "8": 2,
+          "12": 3
+        },
+        "activated": [
+          0,
+          1,
+          3,
+          4,
+          8,
+          12
+        ]
+      },
+      {
+        "seed": 1,
+        "reachableCount": 2,
+        "reachRatio": 0.15384615384615385,
+        "cascadeDepth": 1,
+        "branchEvents": 0,
+        "generations": {
+          "1": 0,
+          "4": 1
+        },
+        "activated": [
+          1,
+          4
+        ]
+      },
+      {
+        "seed": 2,
+        "reachableCount": 7,
+        "reachRatio": 0.5384615384615384,
+        "cascadeDepth": 4,
+        "branchEvents": 1,
+        "generations": {
+          "2": 0,
+          "1": 1,
+          "0": 1,
+          "4": 2,
+          "3": 2,
+          "8": 3,
+          "12": 4
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          8,
+          12
+        ]
+      },
+      {
+        "seed": 3,
+        "reachableCount": 6,
+        "reachRatio": 0.46153846153846156,
+        "cascadeDepth": 4,
+        "branchEvents": 1,
+        "generations": {
+          "3": 0,
+          "8": 1,
+          "12": 2,
+          "0": 2,
+          "4": 3,
+          "1": 4
+        },
+        "activated": [
+          0,
+          1,
+          3,
+          4,
+          8,
+          12
+        ]
+      },
+      {
+        "seed": 4,
+        "reachableCount": 2,
+        "reachRatio": 0.15384615384615385,
+        "cascadeDepth": 1,
+        "branchEvents": 0,
+        "generations": {
+          "4": 0,
+          "1": 1
+        },
+        "activated": [
+          1,
+          4
+        ]
+      },
+      {
+        "seed": 5,
+        "reachableCount": 11,
+        "reachRatio": 0.8461538461538461,
+        "cascadeDepth": 5,
+        "branchEvents": 3,
+        "generations": {
+          "5": 0,
+          "7": 1,
+          "8": 2,
+          "9": 2,
+          "10": 2,
+          "12": 3,
+          "0": 3,
+          "11": 3,
+          "3": 3,
+          "4": 4,
+          "1": 5
+        },
+        "activated": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "seed": 6,
+        "reachableCount": 13,
+        "reachRatio": 1.0,
+        "cascadeDepth": 4,
+        "branchEvents": 3,
+        "generations": {
+          "6": 0,
+          "5": 1,
+          "2": 1,
+          "7": 2,
+          "1": 2,
+          "0": 2,
+          "8": 3,
+          "9": 3,
+          "10": 3,
+          "4": 3,
+          "3": 3,
+          "12": 4,
+          "11": 4
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "seed": 7,
+        "reachableCount": 10,
+        "reachRatio": 0.7692307692307693,
+        "cascadeDepth": 4,
+        "branchEvents": 3,
+        "generations": {
+          "7": 0,
+          "8": 1,
+          "9": 1,
+          "10": 1,
+          "12": 2,
+          "0": 2,
+          "11": 2,
+          "3": 2,
+          "4": 3,
+          "1": 4
+        },
+        "activated": [
+          0,
+          1,
+          3,
+          4,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "seed": 8,
+        "reachableCount": 6,
+        "reachRatio": 0.46153846153846156,
+        "cascadeDepth": 3,
+        "branchEvents": 1,
+        "generations": {
+          "8": 0,
+          "12": 1,
+          "0": 1,
+          "3": 2,
+          "4": 2,
+          "1": 3
+        },
+        "activated": [
+          0,
+          1,
+          3,
+          4,
+          8,
+          12
+        ]
+      },
+      {
+        "seed": 9,
+        "reachableCount": 1,
+        "reachRatio": 0.07692307692307693,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "9": 0
+        },
+        "activated": [
+          9
+        ]
+      },
+      {
+        "seed": 10,
+        "reachableCount": 9,
+        "reachRatio": 0.6923076923076923,
+        "cascadeDepth": 5,
+        "branchEvents": 2,
+        "generations": {
+          "10": 0,
+          "11": 1,
+          "3": 1,
+          "9": 2,
+          "8": 2,
+          "12": 3,
+          "0": 3,
+          "4": 4,
+          "1": 5
+        },
+        "activated": [
+          0,
+          1,
+          3,
+          4,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "seed": 11,
+        "reachableCount": 2,
+        "reachRatio": 0.15384615384615385,
+        "cascadeDepth": 1,
+        "branchEvents": 0,
+        "generations": {
+          "11": 0,
+          "9": 1
+        },
+        "activated": [
+          9,
+          11
+        ]
+      },
+      {
+        "seed": 12,
+        "reachableCount": 6,
+        "reachRatio": 0.46153846153846156,
+        "cascadeDepth": 5,
+        "branchEvents": 0,
+        "generations": {
+          "12": 0,
+          "3": 1,
+          "8": 2,
+          "0": 3,
+          "4": 4,
+          "1": 5
+        },
+        "activated": [
+          0,
+          1,
+          3,
+          4,
+          8,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "name": "回旋",
+    "solutionCount": 1,
+    "solutionSeeds": [
+      6
+    ],
+    "nearMissCount": 5,
+    "seeds": [
+      {
+        "seed": 0,
+        "reachableCount": 12,
+        "reachRatio": 0.75,
+        "cascadeDepth": 4,
+        "branchEvents": 2,
+        "generations": {
+          "0": 0,
+          "15": 1,
+          "14": 1,
+          "13": 1,
+          "12": 1,
+          "5": 2,
+          "11": 2,
+          "10": 2,
+          "9": 2,
+          "8": 2,
+          "3": 3,
+          "4": 4
+        },
+        "activated": [
+          0,
+          3,
+          4,
+          5,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "seed": 1,
+        "reachableCount": 2,
+        "reachRatio": 0.125,
+        "cascadeDepth": 1,
+        "branchEvents": 0,
+        "generations": {
+          "1": 0,
+          "7": 1
+        },
+        "activated": [
+          1,
+          7
+        ]
+      },
+      {
+        "seed": 2,
+        "reachableCount": 15,
+        "reachRatio": 0.9375,
+        "cascadeDepth": 5,
+        "branchEvents": 3,
+        "generations": {
+          "2": 0,
+          "1": 1,
+          "0": 1,
+          "7": 2,
+          "15": 2,
+          "14": 2,
+          "13": 2,
+          "12": 2,
+          "5": 3,
+          "11": 3,
+          "10": 3,
+          "9": 3,
+          "8": 3,
+          "3": 4,
+          "4": 5
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "seed": 3,
+        "reachableCount": 2,
+        "reachRatio": 0.125,
+        "cascadeDepth": 1,
+        "branchEvents": 0,
+        "generations": {
+          "3": 0,
+          "4": 1
+        },
+        "activated": [
+          3,
+          4
+        ]
+      },
+      {
+        "seed": 4,
+        "reachableCount": 1,
+        "reachRatio": 0.0625,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "4": 0
+        },
+        "activated": [
+          4
+        ]
+      },
+      {
+        "seed": 5,
+        "reachableCount": 3,
+        "reachRatio": 0.1875,
+        "cascadeDepth": 2,
+        "branchEvents": 0,
+        "generations": {
+          "5": 0,
+          "3": 1,
+          "4": 2
+        },
+        "activated": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "seed": 6,
+        "reachableCount": 16,
+        "reachRatio": 1.0,
+        "cascadeDepth": 6,
+        "branchEvents": 3,
+        "generations": {
+          "6": 0,
+          "2": 1,
+          "1": 2,
+          "0": 2,
+          "7": 3,
+          "15": 3,
+          "14": 3,
+          "13": 3,
+          "12": 3,
+          "5": 4,
+          "11": 4,
+          "10": 4,
+          "9": 4,
+          "8": 4,
+          "3": 5,
+          "4": 6
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "seed": 7,
+        "reachableCount": 1,
+        "reachRatio": 0.0625,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "7": 0
+        },
+        "activated": [
+          7
+        ]
+      },
+      {
+        "seed": 8,
+        "reachableCount": 12,
+        "reachRatio": 0.75,
+        "cascadeDepth": 5,
+        "branchEvents": 2,
+        "generations": {
+          "8": 0,
+          "0": 1,
+          "15": 2,
+          "14": 2,
+          "13": 2,
+          "12": 2,
+          "5": 3,
+          "11": 3,
+          "10": 3,
+          "9": 3,
+          "3": 4,
+          "4": 5
+        },
+        "activated": [
+          0,
+          3,
+          4,
+          5,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "seed": 9,
+        "reachableCount": 1,
+        "reachRatio": 0.0625,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "9": 0
+        },
+        "activated": [
+          9
+        ]
+      },
+      {
+        "seed": 10,
+        "reachableCount": 1,
+        "reachRatio": 0.0625,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "10": 0
+        },
+        "activated": [
+          10
+        ]
+      },
+      {
+        "seed": 11,
+        "reachableCount": 12,
+        "reachRatio": 0.75,
+        "cascadeDepth": 6,
+        "branchEvents": 2,
+        "generations": {
+          "11": 0,
+          "10": 1,
+          "9": 1,
+          "8": 1,
+          "0": 2,
+          "15": 3,
+          "14": 3,
+          "13": 3,
+          "12": 3,
+          "5": 4,
+          "3": 5,
+          "4": 6
+        },
+        "activated": [
+          0,
+          3,
+          4,
+          5,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "seed": 12,
+        "reachableCount": 12,
+        "reachRatio": 0.75,
+        "cascadeDepth": 6,
+        "branchEvents": 2,
+        "generations": {
+          "12": 0,
+          "11": 1,
+          "10": 1,
+          "9": 1,
+          "8": 1,
+          "0": 2,
+          "15": 3,
+          "14": 3,
+          "13": 3,
+          "5": 4,
+          "3": 5,
+          "4": 6
+        },
+        "activated": [
+          0,
+          3,
+          4,
+          5,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "seed": 13,
+        "reachableCount": 12,
+        "reachRatio": 0.75,
+        "cascadeDepth": 4,
+        "branchEvents": 2,
+        "generations": {
+          "13": 0,
+          "14": 1,
+          "15": 1,
+          "0": 1,
+          "5": 2,
+          "12": 2,
+          "3": 3,
+          "11": 3,
+          "10": 3,
+          "9": 3,
+          "8": 3,
+          "4": 4
+        },
+        "activated": [
+          0,
+          3,
+          4,
+          5,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "seed": 14,
+        "reachableCount": 1,
+        "reachRatio": 0.0625,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "14": 0
+        },
+        "activated": [
+          14
+        ]
+      },
+      {
+        "seed": 15,
+        "reachableCount": 4,
+        "reachRatio": 0.25,
+        "cascadeDepth": 3,
+        "branchEvents": 0,
+        "generations": {
+          "15": 0,
+          "5": 1,
+          "3": 2,
+          "4": 3
+        },
+        "activated": [
+          3,
+          4,
+          5,
+          15
+        ]
+      }
+    ]
+  },
+  {
+    "name": "终章 · 共振",
+    "solutionCount": 1,
+    "solutionSeeds": [
+      9
+    ],
+    "nearMissCount": 3,
+    "seeds": [
+      {
+        "seed": 0,
+        "reachableCount": 3,
+        "reachRatio": 0.16666666666666666,
+        "cascadeDepth": 1,
+        "branchEvents": 1,
+        "generations": {
+          "0": 0,
+          "5": 1,
+          "10": 1
+        },
+        "activated": [
+          0,
+          5,
+          10
+        ]
+      },
+      {
+        "seed": 1,
+        "reachableCount": 4,
+        "reachRatio": 0.2222222222222222,
+        "cascadeDepth": 2,
+        "branchEvents": 1,
+        "generations": {
+          "1": 0,
+          "0": 1,
+          "5": 2,
+          "10": 2
+        },
+        "activated": [
+          0,
+          1,
+          5,
+          10
+        ]
+      },
+      {
+        "seed": 2,
+        "reachableCount": 7,
+        "reachRatio": 0.3888888888888889,
+        "cascadeDepth": 3,
+        "branchEvents": 1,
+        "generations": {
+          "2": 0,
+          "7": 1,
+          "12": 1,
+          "16": 1,
+          "4": 2,
+          "14": 2,
+          "10": 3
+        },
+        "activated": [
+          2,
+          4,
+          7,
+          10,
+          12,
+          14,
+          16
+        ]
+      },
+      {
+        "seed": 3,
+        "reachableCount": 11,
+        "reachRatio": 0.6111111111111112,
+        "cascadeDepth": 3,
+        "branchEvents": 3,
+        "generations": {
+          "3": 0,
+          "2": 1,
+          "1": 1,
+          "0": 1,
+          "7": 2,
+          "12": 2,
+          "16": 2,
+          "5": 2,
+          "10": 2,
+          "4": 3,
+          "14": 3
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12,
+          14,
+          16
+        ]
+      },
+      {
+        "seed": 4,
+        "reachableCount": 3,
+        "reachRatio": 0.16666666666666666,
+        "cascadeDepth": 1,
+        "branchEvents": 1,
+        "generations": {
+          "4": 0,
+          "7": 1,
+          "10": 1
+        },
+        "activated": [
+          4,
+          7,
+          10
+        ]
+      },
+      {
+        "seed": 5,
+        "reachableCount": 1,
+        "reachRatio": 0.05555555555555555,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "5": 0
+        },
+        "activated": [
+          5
+        ]
+      },
+      {
+        "seed": 6,
+        "reachableCount": 7,
+        "reachRatio": 0.3888888888888889,
+        "cascadeDepth": 4,
+        "branchEvents": 2,
+        "generations": {
+          "6": 0,
+          "11": 1,
+          "15": 1,
+          "1": 2,
+          "0": 3,
+          "5": 4,
+          "10": 4
+        },
+        "activated": [
+          0,
+          1,
+          5,
+          6,
+          10,
+          11,
+          15
+        ]
+      },
+      {
+        "seed": 7,
+        "reachableCount": 3,
+        "reachRatio": 0.16666666666666666,
+        "cascadeDepth": 2,
+        "branchEvents": 0,
+        "generations": {
+          "7": 0,
+          "4": 1,
+          "10": 2
+        },
+        "activated": [
+          4,
+          7,
+          10
+        ]
+      },
+      {
+        "seed": 8,
+        "reachableCount": 14,
+        "reachRatio": 0.7777777777777778,
+        "cascadeDepth": 5,
+        "branchEvents": 4,
+        "generations": {
+          "8": 0,
+          "13": 1,
+          "17": 1,
+          "3": 2,
+          "2": 3,
+          "1": 3,
+          "0": 3,
+          "7": 4,
+          "12": 4,
+          "16": 4,
+          "5": 4,
+          "10": 4,
+          "4": 5,
+          "14": 5
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          10,
+          12,
+          13,
+          14,
+          16,
+          17
+        ]
+      },
+      {
+        "seed": 9,
+        "reachableCount": 18,
+        "reachRatio": 1.0,
+        "cascadeDepth": 6,
+        "branchEvents": 5,
+        "generations": {
+          "9": 0,
+          "8": 1,
+          "7": 1,
+          "6": 1,
+          "5": 1,
+          "13": 2,
+          "17": 2,
+          "4": 2,
+          "11": 2,
+          "15": 2,
+          "3": 3,
+          "10": 3,
+          "1": 3,
+          "2": 4,
+          "0": 4,
+          "12": 5,
+          "16": 5,
+          "14": 6
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      {
+        "seed": 10,
+        "reachableCount": 1,
+        "reachRatio": 0.05555555555555555,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "10": 0
+        },
+        "activated": [
+          10
+        ]
+      },
+      {
+        "seed": 11,
+        "reachableCount": 1,
+        "reachRatio": 0.05555555555555555,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "11": 0
+        },
+        "activated": [
+          11
+        ]
+      },
+      {
+        "seed": 12,
+        "reachableCount": 1,
+        "reachRatio": 0.05555555555555555,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "12": 0
+        },
+        "activated": [
+          12
+        ]
+      },
+      {
+        "seed": 13,
+        "reachableCount": 1,
+        "reachRatio": 0.05555555555555555,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "13": 0
+        },
+        "activated": [
+          13
+        ]
+      },
+      {
+        "seed": 14,
+        "reachableCount": 1,
+        "reachRatio": 0.05555555555555555,
+        "cascadeDepth": 0,
+        "branchEvents": 0,
+        "generations": {
+          "14": 0
+        },
+        "activated": [
+          14
+        ]
+      },
+      {
+        "seed": 15,
+        "reachableCount": 7,
+        "reachRatio": 0.3888888888888889,
+        "cascadeDepth": 3,
+        "branchEvents": 2,
+        "generations": {
+          "15": 0,
+          "11": 1,
+          "6": 1,
+          "1": 1,
+          "0": 2,
+          "5": 3,
+          "10": 3
+        },
+        "activated": [
+          0,
+          1,
+          5,
+          6,
+          10,
+          11,
+          15
+        ]
+      },
+      {
+        "seed": 16,
+        "reachableCount": 2,
+        "reachRatio": 0.1111111111111111,
+        "cascadeDepth": 1,
+        "branchEvents": 0,
+        "generations": {
+          "16": 0,
+          "14": 1
+        },
+        "activated": [
+          14,
+          16
+        ]
+      },
+      {
+        "seed": 17,
+        "reachableCount": 14,
+        "reachRatio": 0.7777777777777778,
+        "cascadeDepth": 4,
+        "branchEvents": 4,
+        "generations": {
+          "17": 0,
+          "13": 1,
+          "8": 1,
+          "3": 1,
+          "2": 2,
+          "1": 2,
+          "0": 2,
+          "7": 3,
+          "12": 3,
+          "16": 3,
+          "5": 3,
+          "10": 3,
+          "4": 4,
+          "14": 4
+        },
+        "activated": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          10,
+          12,
+          13,
+          14,
+          16,
+          17
+        ]
+      }
+    ]
+  }
+]
