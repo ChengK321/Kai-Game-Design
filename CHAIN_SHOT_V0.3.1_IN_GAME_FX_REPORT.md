@@ -54,4 +54,4 @@ Classic仍默认。没有预判Blast胜出，也未修改关卡或处理失败�
 
 ## Git
 
-目标分支 `design/chain-shot-v0.1`；实现提交与最终推送状态见本次交付记录。没有合并main。
+实现提交：`7add17c469eb48e0344d08f5ad0fbcc63efa5ac8`。已成功推送至 `origin/design/chain-shot-v0.1`（远端从 `c6f5dcb` 更新至 `7add17c`）。本段是随后补充的交付记录；没有合并main。
