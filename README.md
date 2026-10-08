@@ -1,5 +1,18 @@
 ﻿# Kai Game Design — Chain Shot V0.1
 
+## Current Design State (2026-10-09)
+
+**Source of truth:** [Chain Shot Master Design State & One-Rule Depth Gate](CHAIN_SHOT_MASTER_DESIGN_STATE_2026-10-09.md).
+
+- Latest experiment: **V0.3.1** (`prototype/chain-shot-v0.3.1.html`).
+- Human-preferred design baseline: **Classic + synthesized Hit + Direction-family colors**.
+- In-game experiment currently may launch with Pop; use `?audio=synth&mode=classic` for the approved baseline.
+- Licensed Pop / Balloon Blast: **HOLD**, not permanently rejected.
+- Rule, Solver and curated 10 levels: **frozen pending new evidence**.
+- Next: **One Rule depth and failure-learning human playtest**. No V0.4/new systems approved.
+- Research integration: [Kai-Game-Lab Game Skills PR #2](https://github.com/ChengK321/Kai-Game-Lab/pull/2) remains open/not merged; methods only, no automatic installation claim.
+
+
 本分支用于验证 Chain Shot 的核心 Pleasure Loop，不代表完整立项。
 
 ## Files
