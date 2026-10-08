@@ -1,0 +1,42 @@
+[
+  {
+    "id": "balloon",
+    "label": "气球 · Lukeo135",
+    "source": "https://freesound.org/people/Lukeo135/sounds/563197/",
+    "note": "公开 HQ MP3 预览，非原 WAV",
+    "license": "CC0 1.0",
+    "sha256": "b22b8621158d7d23faa667509de57e715ba9cff5c754c628e5b0bf0a59036175",
+    "checkedDate": "2026-10-08",
+    "downloadUrl": "https://cdn.freesound.org/previews/563/563197_9271584-hq.mp3"
+  },
+  {
+    "id": "balloon2",
+    "label": "气球 · Breviceps",
+    "source": "https://freesound.org/people/Breviceps/sounds/458398/",
+    "note": "公开 HQ MP3 预览，非原 WAV",
+    "license": "CC0 1.0",
+    "sha256": "db997e6223024c0986cd396a1ba01bfcee6e45b0a58e85e836749094dc3d2a64",
+    "checkedDate": "2026-10-08",
+    "downloadUrl": "https://cdn.freesound.org/previews/458/458398_9159316-hq.mp3"
+  },
+  {
+    "id": "impact",
+    "label": "Kenney · Generic light",
+    "source": "https://kenney.nl/assets/impact-sounds",
+    "note": "impactGeneric_light_000.ogg",
+    "license": "CC0 1.0",
+    "sha256": "f0e982611e97512fee5f777986b67e8b435434b601f94992ec044f7e89fb5acb",
+    "checkedDate": "2026-10-08",
+    "downloadUrl": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip"
+  },
+  {
+    "id": "pluck",
+    "label": "Kenney · Pluck",
+    "source": "https://kenney.nl/assets/interface-sounds",
+    "note": "pluck_001.ogg",
+    "license": "CC0 1.0",
+    "sha256": "be97ec4893a02d6eccfb678daa76c83e34cb2583b834ec2593d2641def739fa4",
+    "checkedDate": "2026-10-08",
+    "downloadUrl": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip"
+  }
+]

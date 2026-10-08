@@ -1,0 +1,365 @@
+{
+  "firstFrameDelays": [
+    {
+      "index": 0,
+      "delayMs": 14.397999904632586
+    },
+    {
+      "index": 1,
+      "delayMs": 11.19499995231632
+    },
+    {
+      "index": 2,
+      "delayMs": 8.618000047683704
+    },
+    {
+      "index": 3,
+      "delayMs": 5.716000095367435
+    },
+    {
+      "index": 4,
+      "delayMs": 0.8100000000000884
+    },
+    {
+      "index": 5,
+      "delayMs": 14.724000000000071
+    },
+    {
+      "index": 6,
+      "delayMs": 11.381000000000085
+    },
+    {
+      "index": 7,
+      "delayMs": 8.322999809265209
+    },
+    {
+      "index": 8,
+      "delayMs": 4.9049999046324455
+    },
+    {
+      "index": 9,
+      "delayMs": 1.5050000476835024
+    },
+    {
+      "index": 10,
+      "delayMs": 14.76199999999972
+    },
+    {
+      "index": 11,
+      "delayMs": 11.322999999999972
+    }
+  ],
+  "tested": [
+    {
+      "sample": "balloon",
+      "mode": "classic",
+      "preset": "single",
+      "hits": 1,
+      "groups": 1,
+      "maxPop": 1
+    },
+    {
+      "sample": "balloon",
+      "mode": "classic",
+      "preset": "twelve",
+      "hits": 12,
+      "groups": 12,
+      "maxPop": 2
+    },
+    {
+      "sample": "balloon",
+      "mode": "classic",
+      "preset": "medium",
+      "hits": 12,
+      "groups": 12,
+      "maxPop": 2
+    },
+    {
+      "sample": "balloon",
+      "mode": "classic",
+      "preset": "dense",
+      "hits": 18,
+      "groups": 15,
+      "maxPop": 2
+    },
+    {
+      "sample": "balloon",
+      "mode": "blast",
+      "preset": "single",
+      "hits": 1,
+      "groups": 1,
+      "maxPop": 1
+    },
+    {
+      "sample": "balloon",
+      "mode": "blast",
+      "preset": "twelve",
+      "hits": 12,
+      "groups": 12,
+      "maxPop": 2
+    },
+    {
+      "sample": "balloon",
+      "mode": "blast",
+      "preset": "medium",
+      "hits": 12,
+      "groups": 12,
+      "maxPop": 2
+    },
+    {
+      "sample": "balloon",
+      "mode": "blast",
+      "preset": "dense",
+      "hits": 18,
+      "groups": 15,
+      "maxPop": 2
+    },
+    {
+      "sample": "balloon2",
+      "mode": "classic",
+      "preset": "single",
+      "hits": 1,
+      "groups": 1,
+      "maxPop": 1
+    },
+    {
+      "sample": "balloon2",
+      "mode": "classic",
+      "preset": "twelve",
+      "hits": 12,
+      "groups": 12,
+      "maxPop": 2
+    },
+    {
+      "sample": "balloon2",
+      "mode": "classic",
+      "preset": "medium",
+      "hits": 12,
+      "groups": 12,
+      "maxPop": 2
+    },
+    {
+      "sample": "balloon2",
+      "mode": "classic",
+      "preset": "dense",
+      "hits": 18,
+      "groups": 15,
+      "maxPop": 2
+    },
+    {
+      "sample": "balloon2",
+      "mode": "blast",
+      "preset": "single",
+      "hits": 1,
+      "groups": 1,
+      "maxPop": 1
+    },
+    {
+      "sample": "balloon2",
+      "mode": "blast",
+      "preset": "twelve",
+      "hits": 12,
+      "groups": 12,
+      "maxPop": 2
+    },
+    {
+      "sample": "balloon2",
+      "mode": "blast",
+      "preset": "medium",
+      "hits": 12,
+      "groups": 12,
+      "maxPop": 2
+    },
+    {
+      "sample": "balloon2",
+      "mode": "blast",
+      "preset": "dense",
+      "hits": 18,
+      "groups": 15,
+      "maxPop": 2
+    },
+    {
+      "sample": "impact",
+      "mode": "classic",
+      "preset": "single",
+      "hits": 1,
+      "groups": 1,
+      "maxPop": 1
+    },
+    {
+      "sample": "impact",
+      "mode": "classic",
+      "preset": "twelve",
+      "hits": 12,
+      "groups": 12,
+      "maxPop": 2
+    },
+    {
+      "sample": "impact",
+      "mode": "classic",
+      "preset": "medium",
+      "hits": 12,
+      "groups": 12,
+      "maxPop": 2
+    },
+    {
+      "sample": "impact",
+      "mode": "classic",
+      "preset": "dense",
+      "hits": 18,
+      "groups": 15,
+      "maxPop": 2
+    },
+    {
+      "sample": "impact",
+      "mode": "blast",
+      "preset": "single",
+      "hits": 1,
+      "groups": 1,
+      "maxPop": 1
+    },
+    {
+      "sample": "impact",
+      "mode": "blast",
+      "preset": "twelve",
+      "hits": 12,
+      "groups": 12,
+      "maxPop": 2
+    },
+    {
+      "sample": "impact",
+      "mode": "blast",
+      "preset": "medium",
+      "hits": 12,
+      "groups": 12,
+      "maxPop": 2
+    },
+    {
+      "sample": "impact",
+      "mode": "blast",
+      "preset": "dense",
+      "hits": 18,
+      "groups": 15,
+      "maxPop": 2
+    },
+    {
+      "sample": "pluck",
+      "mode": "classic",
+      "preset": "single",
+      "hits": 1,
+      "groups": 1,
+      "maxPop": 1
+    },
+    {
+      "sample": "pluck",
+      "mode": "classic",
+      "preset": "twelve",
+      "hits": 12,
+      "groups": 12,
+      "maxPop": 1
+    },
+    {
+      "sample": "pluck",
+      "mode": "classic",
+      "preset": "medium",
+      "hits": 12,
+      "groups": 12,
+      "maxPop": 2
+    },
+    {
+      "sample": "pluck",
+      "mode": "classic",
+      "preset": "dense",
+      "hits": 18,
+      "groups": 15,
+      "maxPop": 2
+    },
+    {
+      "sample": "pluck",
+      "mode": "blast",
+      "preset": "single",
+      "hits": 1,
+      "groups": 1,
+      "maxPop": 1
+    },
+    {
+      "sample": "pluck",
+      "mode": "blast",
+      "preset": "twelve",
+      "hits": 12,
+      "groups": 12,
+      "maxPop": 1
+    },
+    {
+      "sample": "pluck",
+      "mode": "blast",
+      "preset": "medium",
+      "hits": 12,
+      "groups": 12,
+      "maxPop": 2
+    },
+    {
+      "sample": "pluck",
+      "mode": "blast",
+      "preset": "dense",
+      "hits": 18,
+      "groups": 15,
+      "maxPop": 2
+    }
+  ],
+  "decoded": {
+    "balloon": {
+      "duration": 0.14,
+      "length": 6720
+    },
+    "balloon2": {
+      "duration": 0.14,
+      "length": 6720
+    },
+    "pluck": {
+      "duration": 0.09952083333333334,
+      "length": 4777
+    },
+    "impact": {
+      "duration": 0.13785416666666667,
+      "length": 6617
+    }
+  },
+  "offlineAudio": [
+    {
+      "id": "balloon",
+      "peak": 0.5879971385002136
+    },
+    {
+      "id": "balloon2",
+      "peak": 0.5743438601493835
+    },
+    {
+      "id": "pluck",
+      "peak": 0.5968752503395081
+    },
+    {
+      "id": "impact",
+      "peak": 0.6058791875839233
+    }
+  ],
+  "layouts": [
+    [
+      1000,
+      900,
+      1
+    ],
+    [
+      390,
+      844,
+      3
+    ],
+    [
+      320,
+      568,
+      2
+    ]
+  ],
+  "consoleErrors": [],
+  "externalRequests": 0
+}
