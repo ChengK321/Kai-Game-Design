@@ -37,4 +37,4 @@ for cfg in configs:
         'early_clear_4plus_pct':round(sum(n>=4 for n in first15)/len(first15)*100,1)}
     all.append(result)
     print(result)
-with open('/mnt/data/peel_validation/decision_quality_300.json','w',encoding='utf8') as f:json.dump(all,f,ensure_ascii=False,indent=2)
+with open('decision_quality_300.json','w',encoding='utf8') as f:json.dump(all,f,ensure_ascii=False,indent=2)
