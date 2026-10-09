@@ -35,3 +35,9 @@ steam:1282730	Loop Hero		Steam	REFERENCE	PREVIOUS_SCAN	已有自动绕圈与环�
 steam:2427700	Backpack Battles		Steam	REFERENCE	PREVIOUS_SCAN	已有形状排列与构筑内容成本分析	https://store.steampowered.com/app/2427700/	previous-reference	2026-10-09
 steam:728880	Overcooked! 2	overcooked 2	Steam	REFERENCE	PREVIOUS_SCAN	已有多人沟通核心迁移失败风险分析	https://store.steampowered.com/app/728880/	previous-reference	2026-10-09
 steam:848350	Katamari Damacy REROLL	katamari damacy	Steam	REFERENCE	PREVIOUS_SCAN	已分析吞噬成长并与Swallow Slide重复风险对照	https://store.steampowered.com/app/848350/	previous-reference	2026-10-09
+play:com.sg.mahjong.stack.tile.sort.puzzle	Mahjong Stack: Tile Sort		Android / Mahjong sort	REFERENCE	ADJACENT_MECHANIC	已有麻将堆叠分类，不能把麻将图案+排序当原创	https://play.google.com/store/apps/details?id=com.sg.mahjong.stack.tile.sort.puzzle	mahjong-sandtrix-v2.1	2026-10-09
+play:com.kite.mahjongshelf	Mahjong Shelf: Sort Puzzle		Android / Mahjong shelf sort	REFERENCE	ADJACENT_MECHANIC	已有麻将货架归类与消除，需以自由预整理+后取牌作区分	https://play.google.com/store/apps/details?id=com.kite.mahjongshelf	mahjong-sandtrix-v2.1	2026-10-09
+play:com.jinlinetwork.mix.mjsort	Mix Mahjong Sort		Android / Mahjong sort	REFERENCE	ADJACENT_MECHANIC	已有麻将有限缓冲槽分类取放；单纯分类不构成差异	https://play.google.com/store/apps/details?id=com.jinlinetwork.mix.mjsort	mahjong-sandtrix-v2.1	2026-10-09
+ios:id6749531088	SandTris™	unirise-sandtris	iOS / Falling sand	REFERENCE	ADJACENT_MECHANIC	另一开发商的沙块消除作品，不能与原Sandtrix仅按名字合并	https://apps.apple.com/us/app/sandtris/id6749531088	mahjong-sandtrix-v2.1	2026-10-09
+ios:id6794268530	Gravity Grid: Color Drop		iOS / Rotate gravity	REFERENCE	ADJACENT_MECHANIC	转动棋盘改变重力已是独立游戏，不把旋转世界直接标新机制	https://apps.apple.com/us/app/gravity-grid-color-drop/id6794268530	mahjong-sandtrix-v2.1	2026-10-09
+site:jakehaas.com/apps/grainfall	Grainfall		Particle toy / Tilt	REFERENCE	ADJACENT_MECHANIC	沙粒倾斜重力已有类似体验，单换手机陀螺仪不是创新	https://jakehaas.com/apps/grainfall/	mahjong-sandtrix-v2.1	2026-10-09
