@@ -70,7 +70,7 @@
 
 ## 文件与复现
 - 本分支可直接在浏览器打开 `prototypes/endless_peel_v0.3.html`，无需服务端和美术资产。
-- 完整 Python 规则模型、6 条规则测试、220 seeds 结果、180 seeds 灵敏度扫描：见同一轮聊天附加的 `Endless_Peel_Research_V0.3.zip`。导出文件是可独立复验的研究包；如后续需 CI，应将测试代码拆分并提交 Git。
+- 完整 Python 规则模型、6 条规则测试、灵敏度扫描和决策行为分析脚本已提交到本分支 `research/` 子目录，可直接本地运行；本轮聊天附件 `Gamelab_OneRule_Validation_V0.3.zip` 另外包含输入/输出 JSON、HTML、浏览器 smoke test，供独立复验。
 - Python 重跑：`python -m unittest -v test_peel_lab.py`；`python peel_lab.py --seeds 220 --out results_220.json`；`python sensitivity.py`。
 - HTML 与 Python 用不同的随机数发生器：同种子只能保证**各自环境内**复现，不能跨语言按 seed 对齐。
 
