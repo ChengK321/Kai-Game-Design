@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1250" role="img" aria-label="03 · 规整排布: 每条线路恰好点亮一盏灯">
+<rect width="1200" height="1250" fill="#F6F8FA"/>
+<text x="80" y="92" font-family="sans-serif" font-size="62" font-weight="bold" fill="#18283B">03 · 规整排布</text>
+<text x="80" y="155" font-family="sans-serif" font-size="33" fill="#425F6C">每条线路，恰好点亮 1 盏灯</text>
+<rect x="70" y="230" width="1060" height="950" rx="30" fill="white" stroke="#DEE5EA" stroke-width="4"/>
+<polyline points="866,999 866,733" fill="none" stroke="white" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="866,999 866,733" fill="none" stroke="#CD8A42" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="436,475 218,475" fill="none" stroke="white" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="436,475 218,475" fill="none" stroke="#238E91" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="436,475 650,475 866,733" fill="none" stroke="white" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="436,475 650,475 866,733" fill="none" stroke="#8D70C5" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="436,475 436,733" fill="none" stroke="white" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="436,475 436,733" fill="none" stroke="#C65D72" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="650,999 866,733" fill="none" stroke="white" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="650,999 866,733" fill="none" stroke="#4B77B6" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="866,999 650,999 436,733" fill="none" stroke="white" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="866,999 650,999 436,733" fill="none" stroke="#668E50" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="218" cy="475" r="34" fill="#FAFBFD" stroke="#52657A" stroke-width="4"/>
+<text x="218" y="486" font-family="sans-serif" font-size="32" font-weight="bold" fill="#24394A" text-anchor="middle">F</text>
+<circle cx="436" cy="475" r="34" fill="#FAFBFD" stroke="#52657A" stroke-width="4"/>
+<text x="436" y="486" font-family="sans-serif" font-size="32" font-weight="bold" fill="#24394A" text-anchor="middle">A</text>
+<circle cx="650" cy="475" r="34" fill="#FAFBFD" stroke="#52657A" stroke-width="4"/>
+<text x="650" y="486" font-family="sans-serif" font-size="32" font-weight="bold" fill="#24394A" text-anchor="middle">C</text>
+<circle cx="866" cy="733" r="34" fill="#FAFBFD" stroke="#52657A" stroke-width="4"/>
+<text x="866" y="744" font-family="sans-serif" font-size="32" font-weight="bold" fill="#24394A" text-anchor="middle">G</text>
+<circle cx="866" cy="999" r="34" fill="#FAFBFD" stroke="#52657A" stroke-width="4"/>
+<text x="866" y="1010" font-family="sans-serif" font-size="32" font-weight="bold" fill="#24394A" text-anchor="middle">B</text>
+<circle cx="650" cy="999" r="34" fill="#FAFBFD" stroke="#52657A" stroke-width="4"/>
+<text x="650" y="1010" font-family="sans-serif" font-size="32" font-weight="bold" fill="#24394A" text-anchor="middle">D</text>
+<circle cx="436" cy="733" r="34" fill="#FAFBFD" stroke="#52657A" stroke-width="4"/>
+<text x="436" y="744" font-family="sans-serif" font-size="32" font-weight="bold" fill="#24394A" text-anchor="middle">E</text>
+<text x="82" y="1218" font-family="sans-serif" font-size="27" fill="#60778A">○ 灭　● 亮　|　共享灯座同时计入所属线路</text>
+</svg>
