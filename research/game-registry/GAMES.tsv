@@ -1,0 +1,37 @@
+game_id	title	aliases	source_type	status	reason_code	recheck_trigger	source_url	evidence_report	last_checked
+steam:2546310	Sandtrix / Sandtrix+	itch:msky-dev/sandtrix;sandtrix+	itch/Steam	PROBE	MECHANIC_DIFF_UNVERIFIED	仅当发现不同于Sandtrix原有规则的可学变形决策才继续	https://msky-dev.itch.io/sandtrix	scan-v2	2026-10-09
+steam:839870	Wilmot's Warehouse	wilmots warehouse	Steam	PROBE	REPRESENTATION_RISK	必须证明无重美术时仍有自主整理乐趣而非纯记忆考核	https://store.steampowered.com/app/839870/Wilmots_Warehouse/	scan-v2	2026-10-09
+steam:3244220	A Game About Digging A Hole	digging a hole	3D exception	CONDITIONAL	REVEAL_CONTENT_RISK	二维剖面无大量升级和内容仍可自发重复挖掘才复查	https://store.steampowered.com/app/3244220/A_Game_About_Digging_A_Hole/	scan-v2	2026-10-09
+steam:1455840	Dorfromantik		2.5D topology	PARK	SIMILAR_MARKET	只有新的低成本核心决策明显不同于平面拼接才重新评估	https://store.steampowered.com/app/1455840/Dorfromantik/	scan-v2	2026-10-09
+steam:977950	A Dance of Fire and Ice	adofai	2D	PARK	AUDIO_LEVEL_CONTENT	获得无版权音轨生成或由几何自身生成可玩的节律验证再复查	https://store.steampowered.com/app/977950/ADanceofFireandIce/	scan-v2	2026-10-09
+steam:1404850	Luck be a Landlord	luck be landlord	2D	SKIP	SYSTEM_CONTENT_COST	有证据表明极少符号也可支持长期可学习的协同时重审	https://store.steampowered.com/app/1404850/Luck_be_a_Landlord/	scan-v2	2026-10-09
+steam:1948280	Stacklands		2D	SKIP	SYSTEM_CONTENT_COST	若发现单一堆叠合成不依赖大量配方和经济系统仍成立才重审	https://store.steampowered.com/app/1948280/	scan-v2	2026-10-09
+steam:1296610	Peglin		2D	PARK	PORTFOLIO_DUPLICATE	Bounce Lab结束后发现完全不同于传统弹射的最小规则才复查	https://store.steampowered.com/app/1296610/peglin/	scan-v2	2026-10-09
+steam:923260	Golf Peaks		2D/2.5D	SKIP	MANUAL_LEVEL_COST	低成本可靠程序化出题和玩家乐趣证据出现时重审	https://store.steampowered.com/app/923260/Golf_Peaks/	scan-v2	2026-10-09
+steam:915310	SNKRX		2D	SKIP	SYSTEM_CONTENT_COST	用少量无职业技能英雄仍有战术深度的实测证据出现再复查	https://store.steampowered.com/app/915310/SNKRX/	scan-v2	2026-10-09
+steam:1794680	Vampire Survivors	vampire-survivors	2D	SKIP	CONTENT_AND_SATURATION	提出原作未提供且不靠海量升级的差异体验才复查	https://store.steampowered.com/app/1794680/Vampire_Survivors/	scan-v2	2026-10-09
+steam:1291340	Townscaper		3D exception	SKIP	UX_TRANSFER_LOSS	二维程序化图形依然让人觉得美且愿意长时点击时复查	https://store.steampowered.com/app/1291340/Townscaper/	scan-v2	2026-10-09
+itch:ezra-szanton/domino-grove	Domino Grove		itch	REFERENCE	PREVIOUS_SCAN	在V1研究为双格绑定取舍的对照基准	https://ezra-szanton.itch.io/domino-grove	scan-v1	2026-10-09
+poki:blocky-blast-puzzle	Blocky Blast Puzzle		Poki	REFERENCE	PREVIOUS_SCAN	已有放置消除空间压力参照，不重复基础拆解	https://poki.com/en/g/blocky-blast-puzzle	scan-v1	2026-10-09
+steam:287980	Mini Metro		Steam	REFERENCE	PREVIOUS_SCAN	已有线路运营与动态需求参照	https://store.steampowered.com/app/287980/	scan-v1	2026-10-09
+steam:1046030	ISLANDERS	islanders	Steam	REFERENCE	PREVIOUS_SCAN	已有评分放置与空间取舍参照	https://store.steampowered.com/app/1046030/	scan-v1	2026-10-09
+poki:stickman-hook	Stickman Hook		Poki	REFERENCE	PREVIOUS_SCAN	已有单键摆荡手感研究	https://poki.com/en/g/stickman-hook	scan-v1	2026-10-09
+steam:2721890	Öoo	ooo;oo game	Steam	REFERENCE	PREVIOUS_SCAN	已有炸弹多用途与关卡成本研究	https://store.steampowered.com/app/2721890/oo/	scan-v1	2026-10-09
+itch:cubestudio/nuworm	nuworm		itch	REFERENCE	PREVIOUS_SCAN	已有多用途运动与关卡内容负担研究	https://cubestudio.itch.io/nuworm	scan-v1	2026-10-09
+itch:pancelor/make-ten	Make Ten		itch	REFERENCE	PREVIOUS_SCAN	已有框选凑十机制参考	https://pancelor.itch.io/make-ten	scan-v1	2026-10-09
+play:com.gamebrain.hexasort	Hexa Sort		Google Play	REFERENCE	PREVIOUS_SCAN	已有同色分类与市场拥挤记录	https://play.google.com/store/apps/details?id=com.gamebrain.hexasort	scan-v1	2026-10-09
+steam:3035120	Is This Seat Taken?		Steam	REFERENCE	PREVIOUS_SCAN	已有偏好放置的语义表达与角色内容成本记录	https://store.steampowered.com/app/3035120/	scan-v1	2026-10-09
+steam:1629520	A Little to the Left	a little to left	Steam	REFERENCE	PREVIOUS_SCAN	已有整理满足与内容资产成本记录	https://store.steampowered.com/app/1629520/	scan-v1	2026-10-09
+steam:2062430	BALL x PIT	ball x pit	Steam	REFERENCE	PREVIOUS_SCAN	已有反弹连锁与成长系统风险记录	https://store.steampowered.com/app/2062430/	scan-v1	2026-10-09
+poki:level-devil	Level Devil		Poki	REFERENCE	PREVIOUS_SCAN	已有惊喜陷阱及手工关卡成本记录	https://poki.com/en/g/level-devil	scan-v1	2026-10-09
+name:arrow-out	Arrow Out	arrow out;一箭又一箭	multi-platform	REFERENCE	PREVIOUS_SCAN	已有箭头阻挡释放和规则表达研究；名称相似产品需分辨	https://www.crazygames.com/c/puzzle	previous-reference	2026-10-09
+name:flow-free	Flow Free	flowfree	mobile	REFERENCE	PREVIOUS_SCAN	已分析同色端点连线的极简实现与海量关卡问题	https://www.bigduckgames.com/flowfree	previous-reference	2026-10-09
+play:com.block.juggle	Block Blast!	block blast	Google Play	REFERENCE	PREVIOUS_SCAN	已分析满行消除与空间压力，不做旧题新扫	https://play.google.com/store/apps/details?id=com.block.juggle	previous-reference	2026-10-09
+name:screw-jam	Screw Jam		mobile	REFERENCE	PREVIOUS_SCAN	已分析临时槽位、颜色约束的必要性	https://rollic.helpshift.com/hc/en/10-screw-jam/faq/255-how-to-play-screw-jam/?p=all	previous-reference	2026-10-09
+name:water-sort-puzzle	Water Sort Puzzle	water sort	mobile	REFERENCE	PREVIOUS_SCAN	已分析流体反馈丢失风险	https://apps.apple.com/us/app/water-sort-puzzle/id1514542157	previous-reference	2026-10-09
+steam:322500	SUPERHOT		Steam	REFERENCE	PREVIOUS_SCAN	已有玩家行动推进时间的规则基因	https://store.steampowered.com/app/322500/	previous-reference	2026-10-09
+steam:1290000	PowerWash Simulator		Steam	REFERENCE	PREVIOUS_SCAN	已有清洁反馈和美术内容成本讨论	https://store.steampowered.com/app/1290000/	previous-reference	2026-10-09
+steam:1282730	Loop Hero		Steam	REFERENCE	PREVIOUS_SCAN	已有自动绕圈与环境布置、系统剥离风险分析	https://store.steampowered.com/app/1282730/	previous-reference	2026-10-09
+steam:2427700	Backpack Battles		Steam	REFERENCE	PREVIOUS_SCAN	已有形状排列与构筑内容成本分析	https://store.steampowered.com/app/2427700/	previous-reference	2026-10-09
+steam:728880	Overcooked! 2	overcooked 2	Steam	REFERENCE	PREVIOUS_SCAN	已有多人沟通核心迁移失败风险分析	https://store.steampowered.com/app/728880/	previous-reference	2026-10-09
+steam:848350	Katamari Damacy REROLL	katamari damacy	Steam	REFERENCE	PREVIOUS_SCAN	已分析吞噬成长并与Swallow Slide重复风险对照	https://store.steampowered.com/app/848350/	previous-reference	2026-10-09
