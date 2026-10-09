@@ -2,7 +2,7 @@
 
 日期：2026-10-09。**GitHub main 分支是跨对话/跨研究分支的游戏扫描登记唯一入口**：
 [GAMES.tsv](GAMES.tsv)。
-当前初始收录 **36 条**：本轮 12 个新增样本 + 已有讨论中能明确识别的 24 个参考样本。
+最初收录 **36 条**（12 个新增样本 + 24 个历史参考）；2026-10-09 已扩至 **42 条**，后续以 GAMES.tsv 的实际行数为准。
 注意：早前用户提供的 50 款截图样本库尚未逐条完整匹配 canonical ID，因此**不应声称此前 50 款已全量去重**；后续补档应按来源逐步添加。
 
 ## 为什么用 TSV
@@ -30,6 +30,8 @@
 
 常用原因：
 SYSTEM_CONTENT_COST（道具职业/配方内容太多）；MANUAL_LEVEL_COST（大量手工关卡）；UX_TRANSFER_LOSS（核心愉悦随简化载体丢失）；AUDIO_LEVEL_CONTENT（音乐与谱面）；PORTFOLIO_DUPLICATE（与现有实验重复）；SIMILAR_MARKET（成熟同质化）；REPRESENTATION_RISK（用简单符号无法自然表达）；MECHANIC_DIFF_UNVERIFIED（尚未找到与原作有意义的机制差异）；REVEAL_CONTENT_RISK（快感依赖不断准备惊喜内容）；PREVIOUS_SCAN（前轮已研究的基准）。
+
+注意：Sandtrix 的 Sandtris/Setris 通用称呼可能与其他厂商独立作品重名。**不可按近似标题自动合并**，必须先用开发商和商店稳定 ID 辨别具体产品；不同开发商的 SandTris™ 独立登记。
 
 ## 下轮扫描的最短工作流
 1. 开始前读取 main 的 GAMES.tsv。对新候选先查商店游戏 ID / 正规 URL，再查 title / aliases；同款改名、跨平台移植要人工识别。**查重在深度拆解之前**。
