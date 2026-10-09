@@ -1,5 +1,5 @@
 game_id	title	aliases	source_type	status	reason_code	recheck_trigger	source_url	evidence_report	last_checked
-steam:2546310	Sandtrix / Sandtrix+	itch:msky-dev/sandtrix;sandtrix+	itch/Steam	PROBE	MECHANIC_DIFF_UNVERIFIED	仅当发现不同于Sandtrix原有规则的可学变形决策才继续	https://msky-dev.itch.io/sandtrix	scan-v2	2026-10-09
+steam:2546310	Sandtrix / Sandtrix+	itch:msky-dev/sandtrix;sandtrix+	itch/Steam	PARK	MECHANIC_DIFF_UNVERIFIED	先证明玩家操作、约束与下一步决策结构不同于原Sandtrix及已知相邻竞品，才允许做游戏原型	https://msky-dev.itch.io/sandtrix	mahjong-sandtrix-v2.1	2026-10-09
 steam:839870	Wilmot's Warehouse	wilmots warehouse	Steam	PROBE	REPRESENTATION_RISK	必须证明无重美术时仍有自主整理乐趣而非纯记忆考核	https://store.steampowered.com/app/839870/Wilmots_Warehouse/	scan-v2	2026-10-09
 steam:3244220	A Game About Digging A Hole	digging a hole	3D exception	CONDITIONAL	REVEAL_CONTENT_RISK	二维剖面无大量升级和内容仍可自发重复挖掘才复查	https://store.steampowered.com/app/3244220/A_Game_About_Digging_A_Hole/	scan-v2	2026-10-09
 steam:1455840	Dorfromantik		2.5D topology	PARK	SIMILAR_MARKET	只有新的低成本核心决策明显不同于平面拼接才重新评估	https://store.steampowered.com/app/1455840/Dorfromantik/	scan-v2	2026-10-09
