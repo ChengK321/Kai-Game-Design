@@ -2,7 +2,7 @@
 
 日期：2026-10-09。**GitHub main 分支是跨对话/跨研究分支的游戏扫描登记唯一入口**：
 [GAMES.tsv](GAMES.tsv)。
-最初收录 **36 条**（12 个新增样本 + 24 个历史参考）；2026-10-09 已扩至 **42 条**，后续以 GAMES.tsv 的实际行数为准。
+最初收录 **36 条**（12 个新增样本 + 24 个历史参考）；2026-10-09 已扩至 **42 条**，2026-10-10 经 Route B 定向轻度益智扫描已扩至 **54 条**，后续以 GAMES.tsv 的实际行数为准。
 注意：早前用户提供的 50 款截图样本库尚未逐条完整匹配 canonical ID，因此**不应声称此前 50 款已全量去重**；后续补档应按来源逐步添加。
 
 ## 为什么用 TSV
@@ -48,3 +48,8 @@ SYSTEM_CONTENT_COST（道具职业/配方内容太多）；MANUAL_LEVEL_COST（�
 
 ## 文件扩容原则
 数百项仍可用 TSV + 搜索；若接近几千条再考虑拆按 canonical ID 前缀建立分表，并保留自动生成的统一索引。没有真实查重瓶颈前，不开发新系统。
+
+### Route B V3 定向扫描（2026-10-10）
+本批 12 款依据已确认的“极简规则驱动休闲益智 / 忠实提纯而非强制原创”标准研究；
+[12 款详细评审](https://github.com/ChengK321/Kai-Game-Design/blob/research/minimal-puzzle-scan-v3-20261010/research/minimal-puzzle-scan/ROUTE_B_TARGETED_SCAN_V3.0.md)。
+本轮 PROBE 表示准许做小原型验证，并不等于得到实际人类游玩或市场正反馈。KAMI 2 的出题质量必须先经独立 Gate。
