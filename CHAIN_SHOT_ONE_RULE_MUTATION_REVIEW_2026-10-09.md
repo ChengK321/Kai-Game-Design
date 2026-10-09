@@ -148,3 +148,75 @@
 - Unknowns: 人类认知直觉、第一次失败后的行为、第二次推理、连锁观赏、重复游玩。
 - Falsification: Reverse 不能让玩家更有根据地选择，或可读性明显退化。
 - Next Evidence: 三个老关卡的同棋盘双规则试玩。
+
+
+## 7. 2026-10-09 Rebaseline — 少即是多：方向选择与调头的反方评审
+
+**新用户反馈**：此前「三邻接力 + 自动下落」「阻挡 × 能量」的方案在体验目标和规则数量上过度复杂。重新聚焦 `仅改变起点如何发射`，不能因为一个数学捷径就引入障碍、重力、数值或多次操作。
+
+### 7.1 新对照方案（仍只研究，不批准开发）
+
+| Candidate | Primary player gesture | Changed rule | Strength | Weakness |
+|---|---|---|---|---|
+| Classic (control) | 点任意箭头 | 发射仍按箭头原方向 | 清晰、已验证体验基线 | 唯一零入度源头捷径 |
+| **Reverse Seed** | **点一个箭头** | 仅 Seed 显式旋转 180° 然后出射；后续按原方向 | 单点击，已证实能破坏旧版根源/失败排除捷径 | 「为何调头」有明显认知违和风险 |
+| **Free Aim Seed** | 从所选箭头位置向方向滑动一次并松手 | Seed 可以任意 8 方向启动；后继原方向 | 符合玩家直觉、自然控制出射方向 | n×8 搜索空间且包含旧答案，可能更容易或更像试错 |
+| Fixed Launcher Aim | 固定源点向 8 方向划动 | 外部发射器点火，原箭头只接力 | 指向含义完全一致、仅一手势 | 新源点与新关卡，部分盘面可能只剩瞄准原根源 |
+| Bidirectional Seed | 点任意箭头 | Seed 同时沿原方向和反方向发射 | 不用调头、视觉有爆发 | 完全包含 Classic 的可达结果，旧捷径与原正解仍然存在 |
+| 90° Forced Turn | 点任意箭头 | Seed 仅固定转 90° 后发射 | 可视觉演示，单击 | 90° 方向约定更任意，同样需精选关卡 |
+
+**最大纠偏**：在 `Free Aim` 中，八方向包含原打印方向，故任何 Classic 必胜起点一定仍是 Free Aim 的必胜操作。除非重设计新关卡，扩大方向选择不会治愈旧图结构。
+
+### 7.2 既有十关下的确定性 Solver 反例（新算，不是真人试玩）
+
+依据原 10 关 JSON、原传播规则，仅替换 Seed 的首次发射方向：
+
+| 关卡 | Classic 正解数 | Reverse 正解数 | Bidirectional 正解数 | Full 8-way Aim 必胜起点-方向组合数 |
+|---|---:|---:|---:|---:|
+| 1 | 1 | 0 | 1 | 2 |
+| 2 | 1 | 0 | 1 | 2 |
+| 3 | 1 | 0 | 2 | 3 |
+| 4 | 1 | 1 | 2 | 4 |
+| 5 | 1 | 2 | 3 | 5 |
+| 6 | 1 | 1 | 3 | 5 |
+| 7 | 1 | 0 | 1 | 2 |
+| 8 | 1 | 0 | 2 | 5 |
+| 9 | 1 | 1 | 2 | 6 |
+| 10 | 1 | 2 | 3 | 5 |
+
+- `Free Aim` 并非天然优于 Reverse；它总是包括旧正确答案，现有关卡还有更多正确组合。
+- `Bidirectional` 更有爆发力，却同样包含旧正解，不适合作为当前推理捷径的主要修复。
+- `Reverse` 已在 L4/L6/L9 三个旧布局中有唯一解，并出现正确起点有旧图入边、甚至错误点击先激活了正确起点的明确反例。
+- `Fixed Launcher` 尚无可比的关卡数据，因此不将其标为通过 Solver 的方案。
+- 所有数量都是 **CALC from existing levels**；它们不说明主观趣味或真实玩家尝试次数。
+
+### 7.3 当前最值得做的单点变化
+
+**Preferred smallest discriminating experiment: Reverse Seed, not general 8-way Aim.**
+
+在视觉方面解决「调头看起来蠢」这一真人反馈，而不是绕开：
+
+1. 点击后先明确出现箭头 180° 转向，在新的可见方向稳定后才释放脉冲；
+2. 其他箭头绝不自动旋转；被击中后按原方向接力；
+3. 转向不需要额外二次点击/弹窗/技能条/能量；
+4. 样本优先 L4 / L6 / L9，此外应检查 1–2 张新布局，避免设计者记住旧关造成判断偏差；
+5. 使用同一 `Classic + Synth Hit + Direction-family` 表达基线；
+6. 核心验收不是更难，而是失败后能否产生新的 **可解释的** 选择。
+
+如果经过一次真正的 Rotate→Fire 动画与真人观察，Reverse 依然显得违反箭头含义，判定为方向语义失败（HOLD/KILL），不要靠炫光遮掩。此时再测试 `Free Aim Seed`，但必须使用专门筛选出的 **没有 Classic 简单赢法** 的关卡，避免扩充输入集合后的伪深度。
+
+### 7.4 Design Red Team
+
+- Reverse 可能只是提高猜测难度，导致玩家无法形成策略。
+- Free Aim 可能扩大试错空间，玩家必须同时寻找箭头与 8 个方向，虽然交互自然却增加认知负担。
+- Fixed Launcher 看似更优雅，但可能退化为「瞄准一个根节点」，并失去原来的 Seed 选择趣味。
+- 既有的零入度图论结论不能证明普通新玩家一定会发现捷径。
+- 不能将难度提升当作好玩提升的替身。
+
+**Decision Log（更新）**
+- Decision: `REVERSE FIRST / AIM ONLY IF REVERSE FAILS`, research status only; no code or mainline changes.
+- Evidence: Existing deterministic 10-board solver comparison, initial negative user response to flip aesthetics, user preference for simplicity.
+- Counter: Reverse is unintuitive; Free Aim may be more natural but expands choices and preserves Classic easy winners unless levels change.
+- Unknowns: perceptual consistency, first-try strategy, ability to form new reasoning, downstream cascade pleasure.
+- Falsification: more mistakes without explainable progress, or players say node arrows cannot be trusted.
+- Next Evidence: 3–5 tiny side-by-side games, new variants' independent Solver assertions, non-leading playtest.
